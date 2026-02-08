@@ -1,0 +1,43 @@
+{
+  "template": "B - Tech Review Blog",
+  "description": "Blog-style with author bio and editorial voice",
+  "domains": [
+    {
+      "domain": "theppctools.com",
+      "siteName": "The PPC Tools",
+      "tagline": "Independent PPC Tool Reviews",
+      "authorName": "Michael Johnson",
+      "authorTitle": "Senior PPC Analyst"
+    },
+    {
+      "domain": "bestppctools.com",
+      "siteName": "Best PPC Tools",
+      "tagline": "Expert Reviews & Comparisons",
+      "authorName": "Sarah Martinez",
+      "authorTitle": "PPC Strategy Consultant"
+    },
+    {
+      "domain": "mygoogleadstools.com",
+      "siteName": "My Google Ads Tools",
+      "tagline": "Real Tests, Real Results",
+      "authorName": "David Chen",
+      "authorTitle": "Digital Marketing Analyst"
+    },
+    {
+      "domain": "googleadstoolbox.com",
+      "siteName": "Google Ads Toolbox",
+      "tagline": "Your PPC Optimization Resource",
+      "authorName": "Emily Rodriguez",
+      "authorTitle": "Performance Marketing Expert"
+    }
+  ],
+  "customization": {
+    "primaryColor": "#f97316",
+    "secondaryColor": "#a855f7",
+    "style": "Blog-style with warm oranges/purples",
+    "fonts": {
+      "heading": "Merriweather, serif",
+      "body": "Open Sans, sans-serif"
+    }
+  }
+}
