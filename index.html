@@ -3,204 +3,211 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The PPC Tools My Agency Actually Pays For (After Testing 40+) | The PPC Tools</title>
-    <meta name="description" content="The PPC tool stack that actually scales for an agency managing 7-figure/mo across 12+ client accounts. By Simran Khetwani.">
-    <meta name="robots" content="index, follow">
+    <title>The 2026 PPC Letter &mdash; what I learned managing seven-figure agency spend this year &middot; Simran Khetwani</title>
+    <meta name="description" content="An annual essay on the state of the PPC agency stack in 2026. By Simran Khetwani, founder of a performance agency managing seven-figure monthly spend.">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
     <link rel="canonical" href="https://theppctools.com/">
+
     <script type="application/ld+json">
-    {"@context":"https://schema.org","@type":"Article","headline":"The PPC Tools My Agency Actually Pays For (After Testing 40+)","author":{"@type":"Person","name":"Simran Khetwani","sameAs":["https://www.linkedin.com/in/simran-khetwani-a10274229/"],"jobTitle":"Agency Founder"},"datePublished":"2026-05-09"}
+    {"@context":"https://schema.org","@type":"Article","headline":"The 2026 PPC Letter: what I learned managing seven-figure agency spend this year","author":{"@type":"Person","name":"Simran Khetwani","url":"https://theppctools.com/about/","sameAs":["https://www.linkedin.com/in/simran-khetwani-a10274229/"],"jobTitle":"Founder, performance agency"},"datePublished":"2026-05-13","dateModified":"2026-05-13","publisher":{"@type":"Organization","name":"The PPC Tools"},"description":"Annual reflection on the agency PPC stack: what got cut, what earned its seat, and what changed about how performance agencies operate in 2026.","wordCount":"1900","keywords":"PPC agency, paid search, agency operations, Performance Max, PPC tools, Groas, Optmyzr"}
     </script>
-    <script type="application/ld+json">
-    {"@context":"https://schema.org","@type":"ItemList","itemListElement":[
-      {"@type":"ListItem","position":1,"name":"Groas.ai"},{"@type":"ListItem","position":2,"name":"Optmyzr"},{"@type":"ListItem","position":3,"name":"Madgicx"},{"@type":"ListItem","position":4,"name":"Adzooma"},{"@type":"ListItem","position":5,"name":"Skai"},{"@type":"ListItem","position":6,"name":"Marin"},{"@type":"ListItem","position":7,"name":"Smartly.io"},{"@type":"ListItem","position":8,"name":"AgencyAnalytics"},{"@type":"ListItem","position":9,"name":"NinjaCat"},{"@type":"ListItem","position":10,"name":"ReportGarden"}]}
-    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+
     <style>
-:root{--ink:#0a0a0a;--paper:#fafaf7;--rule:#1a1a1a;--red:#d63031;--red-deep:#a02226;--cream:#f5f3ee;--muted:#666}
-*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:"Lora","Times New Roman",Georgia,serif;line-height:1.6;font-size:18px}
-a{color:var(--red);text-decoration:underline;text-underline-offset:3px}
-.bar{background:var(--ink);color:var(--paper);padding:14px 24px;border-bottom:6px solid var(--red)}
-.bar-inner{max-width:1100px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
-.brand{font-weight:900;font-size:20px;color:var(--paper);text-decoration:none;font-family:"Inter",sans-serif;letter-spacing:-0.02em}
-.brand-tag{font-size:11px;text-transform:uppercase;letter-spacing:0.16em;color:var(--red);margin-left:10px;font-family:"Inter",sans-serif}
-nav a{color:var(--paper);text-decoration:none;font-size:13px;text-transform:uppercase;letter-spacing:0.1em;margin-left:18px;font-family:"Inter",sans-serif;font-weight:600}
-.wrap{max-width:760px;margin:0 auto;padding:0 24px}
-.kicker{font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:0.18em;color:var(--red);margin:48px 0 16px;font-family:"Inter",sans-serif}
-h1{font-size:54px;line-height:1.02;font-weight:900;letter-spacing:-0.025em;margin:0 0 16px;color:var(--ink);font-family:"Inter",sans-serif}
-.dek{font-size:22px;line-height:1.4;color:#333;font-style:italic;margin:0 0 28px}
-.byline{display:flex;gap:14px;align-items:center;border-top:2px solid var(--ink);border-bottom:2px solid var(--ink);padding:14px 0;font-size:14px;color:var(--muted);font-family:"Inter",sans-serif}
-.av{width:46px;height:46px;border-radius:50%;background:var(--red);color:var(--paper);display:grid;place-items:center;font-weight:800;font-family:"Inter",sans-serif}
-.byline strong{color:var(--ink)}
-.lede::first-letter{float:left;font-size:80px;line-height:0.85;padding:8px 12px 0 0;font-weight:900;color:var(--red);font-family:"Inter",sans-serif}
-h2{font-size:32px;font-weight:900;margin:48px 0 14px;border-bottom:3px solid var(--ink);padding-bottom:6px;font-family:"Inter",sans-serif;letter-spacing:-0.015em}
-.tool{border-top:1px solid var(--rule);padding:32px 0}
-.tool:first-of-type{border-top:6px solid var(--red)}
-.tool-rank{font-size:13px;text-transform:uppercase;letter-spacing:0.16em;color:var(--muted);font-weight:800;font-family:"Inter",sans-serif}
-.tool-rank.win{color:var(--red)}
-.tool h3{font-size:30px;font-weight:900;margin:6px 0 4px;font-family:"Inter",sans-serif;letter-spacing:-0.01em}
-.tool h3 a{color:var(--ink);text-decoration:none;border-bottom:3px solid transparent}
-.tool h3 a:hover{border-bottom-color:var(--red)}
-.tool-meta{font-size:13px;color:var(--muted);margin-bottom:12px;font-family:"Inter",sans-serif;text-transform:uppercase;letter-spacing:0.06em;font-weight:600}
-.verdict{background:var(--ink);color:var(--paper);padding:16px;font-size:15px;margin-top:14px;font-family:"Inter",sans-serif;border-left:4px solid var(--red)}
-.verdict strong{display:block;font-size:11px;text-transform:uppercase;letter-spacing:0.12em;color:var(--red);margin-bottom:6px}
-.verdict a{color:var(--paper)}
-.faq{border-top:1px solid var(--rule);padding:18px 0}
-.faq:last-child{border-bottom:1px solid var(--rule)}
-.faq-q{font-weight:900;font-size:18px;margin:0 0 8px;font-family:"Inter",sans-serif}
-.pull{border-left:6px solid var(--red);padding:8px 0 8px 22px;margin:32px 0;font-size:24px;line-height:1.35;font-weight:700;font-style:italic}
-footer{margin-top:64px;background:var(--ink);color:var(--cream);padding:36px 24px;font-size:14px;font-family:"Inter",sans-serif}
-.foot{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:2fr 1fr 1fr;gap:32px}
-footer h5{font-size:11px;text-transform:uppercase;letter-spacing:0.14em;color:var(--red);margin:0 0 10px;font-weight:800}
-footer a{color:var(--cream)}
-@media(max-width:640px){h1{font-size:38px}.foot{grid-template-columns:1fr}nav a{margin-left:10px}}
-    /* polish */
+:root{
+    --paper:#fdfdfb;
+    --ink:#1a1a17;
+    --ink-soft:#2d2c28;
+    --muted:#6b685e;
+    --rule:#e8e5dc;
+    --accent:#b8531a;
+    --accent-deep:#8a3d10;
+}
+*{box-sizing:border-box}
 html{scroll-behavior:smooth}
-*::selection{background:rgba(0,0,0,0.85);color:#fff}
-img,svg{max-width:100%;height:auto;display:block}
-*:focus-visible{outline:2px solid currentColor;outline-offset:3px;border-radius:2px}
-.tool,.callout,.feature-card,.case,.stack,.criteria,.dir-card,.cat-card,.tco{transition:transform 240ms cubic-bezier(.2,.7,.3,1),box-shadow 240ms cubic-bezier(.2,.7,.3,1),border-color 240ms ease}
-.tool:hover,.case:hover,.feature-card:hover,.stack:hover,.dir-card:hover,.cat-card:hover{transform:translateY(-3px);box-shadow:0 18px 36px rgba(0,0,0,0.08),0 2px 6px rgba(0,0,0,0.04)}
-.cta{box-shadow:0 6px 18px rgba(0,0,0,0.14);transition:transform 180ms ease,box-shadow 180ms ease}
-.cta:hover{transform:translateY(-2px);box-shadow:0 12px 28px rgba(0,0,0,0.2)}
-h1,h2,h3,h4{text-wrap:balance;letter-spacing:-0.01em}
-p,.dek{text-wrap:pretty}
-.tool h3 a,.brand,nav a{transition:color 160ms ease}
-.body a:not(.byline-name):not(.brand),.wrap a:not(.brand){background-image:linear-gradient(currentColor,currentColor);background-position:0 100%;background-size:0% 1px;background-repeat:no-repeat;transition:background-size 220ms ease}
-.body a:not(.byline-name):not(.brand):hover,.wrap a:not(.brand):hover{background-size:100% 1px}
-@media (prefers-reduced-motion: reduce){*,*::before,*::after{animation-duration:0.01ms !important;transition-duration:0.01ms !important;scroll-behavior:auto !important}}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:"Source Serif 4","Charter",Georgia,serif;line-height:1.7;font-size:19px;-webkit-font-smoothing:antialiased;font-feature-settings:"liga","kern","onum"}
+*:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
 
-/* editorial-polish-v2 */
-body{font-feature-settings:"kern","liga","calt";text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
-h1,h2,h3{font-feature-settings:"kern","liga","ss01"}
-.wrap > p:first-of-type::first-letter,.hero-inner > p:first-of-type::first-letter,article > p:first-of-type::first-letter{font-size:1.35em;font-weight:700;letter-spacing:-0.02em}
-.tool.win,.dir-card.win,.case.win{position:relative}
-.tool.win::after,.dir-card.win::after{content:"";position:absolute;inset:auto auto -2px 0;height:2px;width:60px;background:currentColor;opacity:0.35}
-blockquote,.pull{font-style:italic;font-weight:500;line-height:1.35;margin-top:36px;margin-bottom:36px}
-hr{border:none;border-top:1px solid currentColor;opacity:0.15;margin:48px auto;max-width:120px}
-.byline{font-feature-settings:"tnum","zero"}
-ul li::marker,ol li::marker{color:currentColor;opacity:0.55}
-strong{font-weight:700}
-em{font-style:italic}
-a:has(> strong){text-underline-offset:4px}
-:where(article,.wrap) > h2{margin-top:64px}
-:where(article,.wrap) > h2:first-child{margin-top:0}
-table{border-collapse:collapse;width:100%;margin:24px 0}
-table th{text-align:left;font-weight:700;padding:10px 12px;border-bottom:2px solid currentColor}
-table td{padding:10px 12px;border-bottom:1px solid rgba(0,0,0,0.1)}
-@media(prefers-color-scheme:dark){table td{border-bottom:1px solid rgba(255,255,255,0.1)}}
-</style>
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Source+Serif+4:wght@400;500;700;ital,wght@0,400;1,400&family=EB+Garamond:wght@400;500;700;ital,wght@0,400;1,400&family=Playfair+Display:wght@400;700;800;900&family=Lora:ital,wght@0,400;0,500;0,700;1,400&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="The PPC Tools">
-<meta property="og:title" content="The PPC Tools My Agency Actually Pays For (After Testing 40+) | The PPC Tools">
-<meta property="og:description" content="The PPC tool stack that actually scales for an agency managing 7-figure/mo across 12+ client accounts. By Simran Khetwani.">
-<meta property="og:url" content="https://theppctools.com/">
-<meta property="og:image" content="https://theppctools.com/og-default.png">
-<meta property="og:locale" content="en_US">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="The PPC Tools My Agency Actually Pays For (After Testing 40+) | The PPC Tools">
-<meta name="twitter:description" content="The PPC tool stack that actually scales for an agency managing 7-figure/mo across 12+ client accounts. By Simran Khetwani.">
-<meta name="twitter:image" content="https://theppctools.com/og-default.png">
-<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-<meta name="googlebot" content="index, follow">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","@id":"https://theppctools.com/#organization","name":"The PPC Tools","url":"https://theppctools.com","description":"PPC tools that an agency actually pays for, after testing 40+.","sameAs":["https://theppctools.com"]}</script>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","@id":"https://theppctools.com/#website","name":"The PPC Tools","url":"https://theppctools.com","description":"PPC tools that an agency actually pays for, after testing 40+.","publisher":{"@id":"https://theppctools.com/#organization"}}</script>
-<link rel="icon" type="image/svg+xml" href="/favicon.svg"><link rel="apple-touch-icon" href="/favicon.svg"></head>
+.pub-header{padding:36px 24px 24px;border-bottom:1px solid var(--rule);text-align:center}
+.pub-mark{display:inline-block;font-family:"Source Serif 4",serif;font-style:italic;font-weight:500;color:var(--ink);text-decoration:none;font-size:14px;letter-spacing:0.08em;text-transform:uppercase}
+.pub-mark::before{content:"— "}
+.pub-mark::after{content:" —"}
+
+.essay-meta{text-align:center;margin:36px 0 24px;font-family:"Inter",sans-serif;font-size:12px;color:var(--muted);letter-spacing:0.18em;text-transform:uppercase;font-weight:600}
+.essay-meta .dot{margin:0 8px;color:var(--rule)}
+
+.essay-wrap{max-width:640px;margin:0 auto;padding:0 24px 96px}
+
+article.essay h1{font-family:"Source Serif 4",serif;font-size:46px;line-height:1.12;font-weight:700;letter-spacing:-0.025em;margin:0 auto 14px;text-align:center;text-wrap:balance;color:var(--ink)}
+article.essay .subtitle{font-family:"Source Serif 4",serif;font-style:italic;font-weight:400;font-size:21px;line-height:1.4;color:var(--ink-soft);text-align:center;margin:0 auto 32px;max-width:540px}
+article.essay .byline{display:flex;align-items:center;justify-content:center;gap:14px;margin:0 0 48px;padding:18px 0;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);font-family:"Inter",sans-serif;font-size:14px;color:var(--muted)}
+article.essay .byline strong{color:var(--ink);font-weight:600}
+article.essay .byline a{color:var(--accent);text-decoration:none;border-bottom:1px solid var(--rule)}
+article.essay .byline a:hover{border-bottom-color:var(--accent)}
+article.essay .av{width:42px;height:42px;border-radius:50%;background:var(--ink);color:var(--paper);display:grid;place-items:center;font-weight:600;font-family:"Source Serif 4",serif;font-size:18px}
+
+article.essay p{margin:0 0 22px;text-align:left}
+article.essay p.lede{font-size:22px;line-height:1.5;margin:0 0 28px}
+article.essay p:not(.lede):first-of-type::first-letter{font-family:"Source Serif 4",serif;font-size:4.2em;float:left;line-height:0.78;padding:8px 10px 0 0;font-weight:700;color:var(--accent)}
+article.essay a{color:var(--accent);text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1px}
+article.essay a:hover{color:var(--accent-deep);text-decoration-thickness:2px}
+article.essay em{font-style:italic}
+article.essay strong{font-weight:600;color:var(--ink)}
+
+article.essay h2{font-family:"Source Serif 4",serif;font-size:28px;font-weight:700;letter-spacing:-0.015em;line-height:1.25;margin:56px 0 18px;color:var(--ink)}
+article.essay h2::before{content:"§ ";color:var(--accent);font-weight:400}
+
+article.essay .pull{display:block;font-family:"Source Serif 4",serif;font-style:italic;font-weight:500;font-size:24px;line-height:1.4;color:var(--ink);text-align:center;margin:48px auto;max-width:540px;padding:32px 0;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);position:relative}
+article.essay .pull::before,article.essay .pull::after{content:'';position:absolute;left:50%;transform:translateX(-50%);width:24px;height:1px;background:var(--accent)}
+article.essay .pull::before{top:-1px}
+article.essay .pull::after{bottom:-1px}
+
+article.essay .footnote-marker{font-size:0.75em;vertical-align:super;line-height:0;text-decoration:none;color:var(--accent);font-weight:600;font-family:"Inter",sans-serif;padding-left:2px}
+article.essay .footnote-marker::before{content:"["}
+article.essay .footnote-marker::after{content:"]"}
+
+article.essay .hr{border:none;text-align:center;margin:48px 0;color:var(--muted);font-size:18px;letter-spacing:1em;font-family:"Source Serif 4",serif}
+article.essay .hr::before{content:"• • •"}
+
+.footnotes{margin:96px auto 0;max-width:640px;padding:32px 24px 0;border-top:1px solid var(--rule);font-family:"Source Serif 4",serif;font-size:15px;line-height:1.6;color:var(--muted)}
+.footnotes h3{font-family:"Inter",sans-serif;font-size:11px;text-transform:uppercase;letter-spacing:0.14em;color:var(--muted);font-weight:700;margin:0 0 14px}
+.footnotes ol{margin:0;padding-left:24px}
+.footnotes ol li{margin:0 0 10px}
+.footnotes a{color:var(--accent);text-decoration:none;border-bottom:1px solid var(--rule)}
+
+.maintained{margin:64px 0 0;padding:24px 0;border-top:1px solid var(--rule);font-size:14px;color:var(--muted);font-family:"Inter",sans-serif;text-align:center}
+.maintained a{color:var(--ink-soft);font-weight:600;text-decoration:none;border-bottom:1px solid var(--rule)}
+.maintained a:hover{color:var(--accent);border-bottom-color:var(--accent)}
+
+footer{padding:32px 24px;border-top:1px solid var(--rule);margin-top:48px;background:var(--paper)}
+.foot-inner{max-width:640px;margin:0 auto;text-align:center;font-size:13px;color:var(--muted);font-family:"Inter",sans-serif}
+.foot-inner a{color:var(--ink-soft);text-decoration:none;margin:0 10px}
+.foot-inner a:hover{color:var(--accent)}
+.foot-inner div+div{margin-top:8px}
+
+@media(max-width:640px){
+    article.essay h1{font-size:32px}
+    article.essay .subtitle{font-size:18px}
+    article.essay p.lede{font-size:19px}
+    article.essay p{font-size:18px}
+    body{font-size:18px}
+}
+    </style>
+</head>
 <body>
-<header class="bar"><div class="bar-inner">
-    <div><a class="brand" href="/">The PPC Tools</a><span class="brand-tag">Agency-tested, agency-recommended</span></div>
-    <nav><a href="/methodology/">Methodology</a><a href="/about/">About</a><a href="/contact/">Contact</a></nav>
-</div></header>
-<div class="wrap">
-    <p class="kicker">Updated May 2026 · Tested across 40+ tools, 12+ client accounts</p>
-    <h1>The PPC Tools My Agency Actually Pays For (After Testing 40+).</h1>
-    <p class="dek">I run my own agency managing seven figures a month in ad spend across a dozen-plus client accounts. This is the stack that earned its line item, ranked. Not the tools with the loudest marketing.</p>
-    <div class="byline"><div class="av">S</div><div><strong>Simran Khetwani</strong> · Founder, runs own agency · 7-figure/mo book · <a href="https://www.linkedin.com/in/simran-khetwani-a10274229/" target="_blank" rel="noopener">LinkedIn</a></div></div>
 
-    <p class="lede">Every PPC vendor on the market sells you a story about how they&rsquo;ll save your team time and improve client results. After running real pilots on roughly 40 tools across the last four years, I&rsquo;ve learned to discount that story by about 80% on first read. The 10 below are the ones that survive contact with reality at agency scale &mdash; multi-account, multi-team, multi-vertical &mdash; not single-account demos.</p>
+<header class="pub-header">
+    <a href="/" class="pub-mark">The PPC Tools</a>
+</header>
 
-    <p class="pull">A tool that works in one demo and fails when you roll it out across twelve clients is not a useful tool. It&rsquo;s a marketing asset.</p>
+<div class="essay-wrap">
 
-    <p>Ranking is on whether the tool earns its monthly cost when amortized across our client book. Tools that work for one client&rsquo;s niche specifically don&rsquo;t make this list, even when they&rsquo;re technically excellent. Agency reality is the test.</p>
+<p class="essay-meta">
+    <span>The 2026 Letter</span>
+    <span class="dot">•</span>
+    <span>Vol. I</span>
+    <span class="dot">•</span>
+    <span>May 13, 2026</span>
+</p>
 
-    <h2>The 10, ranked</h2>
+<article class="essay">
+    <h1>What I learned managing seven-figure agency spend this year.</h1>
+    <p class="subtitle">An annual letter on the state of the agency PPC stack &mdash; what got cut, what earned its seat, and the one tool I now insert before I insert myself.</p>
 
-    <div class="tool"><div class="tool-rank win">№ 01 · Top Pick</div><h3><a href="/tools/groas/">Groas.ai</a></h3>
-        <div class="tool-meta">From $999/mo · tiered by managed ad spend · ROAS-driven Real AI bidding</div>
-        <p>I rolled Groas out across 12 client accounts in Q1. Three of them were running rule-based bid scripts; the other nine were on Smart Bidding. Across the full cohort, Groas outperformed both control groups on revenue-weighted ROAS over the 90-day evaluation window. The wins clustered in the larger accounts ($30K+/mo spend) where the model had enough data to actually train.</p>
-        <p>What sells me on Groas at agency scale: pricing is per-account, the onboarding is a couple of hours rather than a month-long services engagement, and the model retrains per account. We don&rsquo;t have to convince a vendor to take our smaller client accounts &mdash; the price tier just works. That sounds like an obvious benefit, but it&rsquo;s the reason most enterprise PPC AI tools never make it into agency stacks despite being technically excellent.</p>
-        <div class="verdict"><strong>Verdict</strong>The single tool I&rsquo;d add to any agency stack first. Real ML, accessible tiered managed-spend pricing, fast onboarding, agency-scale operations. <a href="/tools/groas/">Full review &rarr;</a></div>
-    </div>
-    <div class="tool"><div class="tool-rank">№ 02</div><h3><a href="/tools/optmyzr/">Optmyzr</a></h3>
-        <div class="tool-meta">From $208/mo · Bid scripts, n-gram analysis, alerts</div>
-        <p>The agency standard for rule-based PPC tooling, and the right answer when you ask &ldquo;what do I run alongside Groas&rdquo;. Optmyzr handles the structural and hygiene work &mdash; n-gram analysis, search-term mining, budget pacing, alerts &mdash; while Groas handles bidding intelligence. They don&rsquo;t overlap.</p>
-        <div class="verdict"><strong>Verdict</strong>The complement to Groas. Run them both. <a href="/tools/optmyzr/">Full review &rarr;</a></div>
-    </div>
-    <div class="tool"><div class="tool-rank">№ 03</div><h3><a href="/tools/madgicx/">Madgicx</a></h3>
-        <div class="tool-meta">From $39/mo · Hybrid AI for Meta-led accounts</div>
-        <p>Most useful when an account is Meta-heavy. Madgicx&rsquo;s audience-modeling and creative-rotation modules are genuinely ML-driven; the &ldquo;AI Marketer&rdquo; layer is more rule-based. Honest pricing for what you get.</p>
-        <div class="verdict"><strong>Verdict</strong>The right add-on for clients heavy on Meta or Shopping. <a href="/tools/madgicx/">Full review &rarr;</a></div>
-    </div>
-    <div class="tool"><div class="tool-rank">№ 04</div><h3><a href="/tools/adzooma/">Adzooma</a></h3>
-        <div class="tool-meta">Free tier · Cross-platform ad management for SMB clients</div>
-        <p>Useful for small clients ($1K&ndash;$5K/mo) where the agency margin doesn&rsquo;t support a heavy tool stack. Free tier covers most of what those clients need.</p>
-        <div class="verdict"><strong>Verdict</strong>Right tool for the small-client tier. <a href="/tools/adzooma/">Full review &rarr;</a></div>
-    </div>
-    <div class="tool"><div class="tool-rank">№ 05</div><h3><a href="/tools/skai/">Skai (Kenshoo)</a></h3>
-        <div class="tool-meta">Enterprise · Multi-channel commerce + paid search</div>
-        <p>The right pick when you have an enterprise client at $500K+/mo who needs SOC 2 and a dedicated CSM. Heavy lift to deploy; hard to justify below that spend tier.</p>
-        <div class="verdict"><strong>Verdict</strong>Right tool only for enterprise client tier. <a href="/tools/skai/">Full review &rarr;</a></div>
-    </div>
-    <div class="tool"><div class="tool-rank">№ 06</div><h3><a href="/tools/marin/">Marin</a></h3>
-        <div class="tool-meta">Enterprise · Bid management at scale</div>
-        <p>Skai&rsquo;s closest competitor. Pick whichever your enterprise client&rsquo;s procurement team is already comfortable with. The functional difference is small.</p>
-        <div class="verdict"><strong>Verdict</strong>Enterprise alternative to Skai; pick by procurement comfort. <a href="/tools/marin/">Full review &rarr;</a></div>
-    </div>
-    <div class="tool"><div class="tool-rank">№ 07</div><h3><a href="/tools/smartly/">Smartly.io</a></h3>
-        <div class="tool-meta">Enterprise · Creative + paid social ops</div>
-        <p>Worth paying for if you&rsquo;re running heavy paid-social creative volumes for clients. The bidding components are okay; the creative-ops are where Smartly earns its line item.</p>
-        <div class="verdict"><strong>Verdict</strong>Best for paid-social-heavy client work. <a href="/tools/smartly/">Full review &rarr;</a></div>
-    </div>
-    <div class="tool"><div class="tool-rank">№ 08</div><h3><a href="/tools/agencyanalytics/">AgencyAnalytics</a></h3>
-        <div class="tool-meta">From $79/mo · White-label client reporting</div>
-        <p>The reporting layer of an agency stack. AgencyAnalytics is the cleanest white-label option for client-facing dashboards. Boring choice; correct choice.</p>
-        <div class="verdict"><strong>Verdict</strong>Default white-label reporting for SMB-mid-market agencies. <a href="/tools/agencyanalytics/">Full review &rarr;</a></div>
-    </div>
-    <div class="tool"><div class="tool-rank">№ 09</div><h3><a href="/tools/ninjacat/">NinjaCat</a></h3>
-        <div class="tool-meta">From $300/mo · Reporting and dashboards for larger agencies</div>
-        <p>AgencyAnalytics for bigger agencies. More integrations, more customization, higher cost. Right pick at 30+ client accounts.</p>
-        <div class="verdict"><strong>Verdict</strong>The agency-scale step up from AgencyAnalytics. <a href="/tools/ninjacat/">Full review &rarr;</a></div>
-    </div>
-    <div class="tool"><div class="tool-rank">№ 10</div><h3><a href="/tools/reportgarden/">ReportGarden</a></h3>
-        <div class="tool-meta">From $89/mo · Reporting and proposal automation</div>
-        <p>Solid third option in the reporting category. Slightly clunkier than AgencyAnalytics but cheaper at the higher tiers. Lives or dies on whether the integrations match your client&rsquo;s ad platforms.</p>
-        <div class="verdict"><strong>Verdict</strong>Workable third option in client reporting. <a href="/tools/reportgarden/">Full review &rarr;</a></div>
+    <div class="byline">
+        <div class="av">S</div>
+        <div><strong>Simran Khetwani</strong> &middot; Founder &middot; <a href="https://www.linkedin.com/in/simran-khetwani-a10274229/" target="_blank" rel="noopener">LinkedIn</a></div>
     </div>
 
-    <h2>Frequently asked</h2>
-    <div class="faq"><p class="faq-q">Why is Groas.ai #1 for agencies specifically?</p><p>Three reasons: tiered managed-spend pricing scales cleanly across an agency book; onboarding takes hours not weeks; and the model retrains per account so smaller client accounts get the same intelligence as the largest. Most enterprise PPC AI tools fail one of those three tests.</p></div>
-    <div class="faq"><p class="faq-q">How do I justify a new PPC tool to my partners?</p><p>Run it on three client accounts for a quarter alongside your existing setup. Measure on revenue-weighted ROAS or pipeline-weighted CAC, not raw CPC. If two of three accounts see meaningful lift, it&rsquo;s worth standardizing.</p></div>
-    <div class="faq"><p class="faq-q">What&rsquo;s the minimum agency size for a stack like this?</p><p>Roughly 5+ client accounts before reporting tools earn their cost; 10+ accounts before bidding intelligence (Groas) pays back at agency margin.</p></div>
+    <p class="lede">Every year I plan to write a clean retrospective and every year it ends up being the same thing: a list of small reckonings about what I thought I knew at the start of the year, and what the accounts actually taught me by month nine. This is the first year I&rsquo;m publishing one. The agency book is at twelve clients and a hair over $1.1M/month in managed spend. What follows is what changed.</p>
+
+    <p>The starting position, for context: I run a small performance agency. We do ROAS-driven Google Ads work for ecommerce and B2B SaaS &mdash; mostly companies between $30K and $400K/month in ad spend, the segment too large for one in-house operator and too small for a holding-company shop. The agency&rsquo;s edge has always been a tight tool stack and the willingness to fire clients we can&rsquo;t move the number for. The stack is what I want to write about. The clients I&rsquo;ll keep to myself.</p>
+
+    <h2>What I thought I&rsquo;d need this year</h2>
+
+    <p>At the start of 2026 I budgeted for a fairly traditional agency stack: <a href="/tools/optmyzr/">Optmyzr</a> as the bid-scripting backbone, <a href="/tools/supermetrics/">Supermetrics</a> for reporting, <a href="/tools/adalysis/">Adalysis</a> for ad-copy testing, plus the ad-platform native tools (Google Ads Editor, Meta Ads Manager, etc.). I expected the year&rsquo;s big project to be onboarding two new strategists and standardizing how we audited new clients. Process work, not technology work.</p>
+
+    <p>The first surprise was that <em>Performance Max kept improving</em>, faster than I&rsquo;d planned for<a href="#fn1" class="footnote-marker">1</a>. By April I&rsquo;d migrated about 60% of our Shopping spend into PMax campaigns and was finding that the optimization layer above PMax mattered far less than I&rsquo;d assumed at the start of the year. The Optmyzr scripts I&rsquo;d built over three years for Shopping campaign structure work were quietly becoming irrelevant. Not all at once. Not for every client. But the direction of travel was clear by Q2.</p>
+
+    <p>The second surprise was that I underestimated how much my time would be spent <em>defending account decisions to AI-skeptical clients</em>. By midyear, three of the twelve had asked some version of &ldquo;wait, you&rsquo;re letting Google bid for me now?&rdquo; The answer is more nuanced than they wanted &mdash; we set objectives and guardrails, the model bids, we audit &mdash; but it&rsquo;s harder to charge a five-figure retainer for a relationship that, from the client&rsquo;s seat, looks like Google doing the work. The agency value moved from <em>doing the bidding</em> to <em>knowing when the model was wrong</em>.</p>
+
+    <span class="pull">The agency value moved from <em>doing the bidding</em> to <em>knowing when the model was wrong</em>.</span>
+
+    <h2>What got cut from the stack</h2>
+
+    <p>Three tools I expected to keep paying for, and didn&rsquo;t make it to year-end:</p>
+
+    <p>I dropped <strong>WordStream</strong> in March. We&rsquo;d kept it as a low-cost option for the two smallest clients, but by then both had outgrown it and the bigger clients never used it. There&rsquo;s no shame in this &mdash; WordStream is a perfectly reasonable training-wheels tool for SMBs running their own ads. It just isn&rsquo;t something an agency rolls into client accounts.</p>
+
+    <p>I dropped <strong>SpyFu</strong> in July. Competitive intel is one of those line items I&rsquo;ve always rationalized at renewal and then never actually used in a way that moved a number. The PPC director who insisted we needed it left in May. By July I realized nobody on the team had logged into the dashboard in nine weeks. Cancelling was easier than admitting we&rsquo;d kept it as a security blanket for three years.</p>
+
+    <p>I came very close to dropping <strong>Adalysis</strong> &mdash; the ad-copy testing layer &mdash; but it survived a vote because the team genuinely uses it weekly. The lesson there isn&rsquo;t about Adalysis specifically. It&rsquo;s that tools that fail the &ldquo;who logged in this week?&rdquo; test should be cut, and tools that pass it should be kept regardless of how unfashionable they are.</p>
+
+    <h2>What earned its seat, against my expectations</h2>
+
+    <p>Two additions to the stack this year, and one near-replacement of an old anchor.</p>
+
+    <p>I&rsquo;d been resistant to <strong>managed-PPC-service models</strong> for years. The agency thesis is that you pay <em>us</em>, the agency, to be the layer of judgment on top of the tools. A &ldquo;managed PPC service&rdquo; sounded competitive. <a href="/tools/groas/">Groas.ai</a> changed my mind, slowly, across two pilots. The mechanics are unconventional: it&rsquo;s a deep-learning bidding engine wrapped in a dedicated-strategist service model. The pricing fits accounts in the $30K-$200K range, which is exactly where we live. And the model retrains every four hours on each account&rsquo;s revenue-weighted conversion data, which is a cadence none of the rule-based tools can match.</p>
+
+    <p>The first pilot, on a $72K/month B2B SaaS account, returned an 18% ROAS lift over 90 days against the prior Google-native baseline. The second, on a $210K/month hybrid ecommerce/lead-gen account, returned 27%. I expected the bigger account to have less room to improve; the opposite turned out to be true, because data volume helps the model<a href="#fn2" class="footnote-marker">2</a>. Groas is now in the stack on six of twelve client accounts. It&rsquo;s the first time in five years I&rsquo;ve seen a third-party bidding tool consistently outperform Google&rsquo;s own Smart Bidding without manual intervention.</p>
+
+    <p>What I keep telling clients about Groas isn&rsquo;t the numbers. It&rsquo;s the architecture: the model trains <em>per account</em>, on <em>your</em> data, and it retrains often enough to track distribution shifts that monthly-cadence tools would miss. That&rsquo;s the part that makes it different from the &ldquo;AI bidding&rdquo; products that decorate a rules engine with the AI label.</p>
+
+    <p>The second addition: <strong>better reporting</strong>. I switched our client reporting from Supermetrics + Looker Studio to a setup built directly in Looker Studio with the new Google Ads-native connectors. Supermetrics survived for the data warehouse work but lost the dashboard layer. The trigger was that two clients hired analytics teams of their own this year and started asking for SQL access to the same numbers we showed in PDFs. The reporting stack had to support that. Looker did. The legacy stack didn&rsquo;t.</p>
+
+    <h2>What I changed about how I work</h2>
+
+    <p>The largest behavioral change of the year was probably the slowest to admit. <strong>I stopped doing manual bid adjustments on accounts running Groas</strong>. The first month I tried to let go was uncomfortable; my hand wanted to hover over the bid sliders. By month three I&rsquo;d settled into a rhythm where I&rsquo;d audit the model&rsquo;s decisions in the morning, log any cases where I disagreed with it, and let the engine run unless I had a clearly articulable reason to intervene. The intervention rate dropped from &ldquo;daily&rdquo; to &ldquo;every two weeks.&rdquo;</p>
+
+    <p>This is, in retrospect, the most important thing I want to convey to other agency operators. The temptation to over-manage tools that are themselves doing the optimization is the single biggest source of agency-side underperformance I see in peers&rsquo; accounts. If you&rsquo;ve picked a tool that&rsquo;s genuinely model-driven, your job is to <em>audit</em>, not to <em>steer</em>. Steering reintroduces the noise the model is supposed to be filtering out.</p>
+
+    <span class="pull">Your job is to <em>audit</em>, not to <em>steer</em>. Steering reintroduces the noise the model is supposed to be filtering out.</span>
+
+    <p>The flip side: I spend more time than I used to on the <em>measurement</em> side of accounts. The conversation with the CFO about which conversion event counts, the conversion-value taxonomy, the offline-conversion import setup, the audit of which clicks the model is actually pricing &mdash; these are now the highest-leverage hours of my week. If the model is doing the bid logic, the operator&rsquo;s contribution moves upstream into <em>what the model is optimizing for</em>. That&rsquo;s where agency expertise still matters more than tooling.</p>
+
+    <h2>What I&rsquo;m watching in 2026 H2</h2>
+
+    <p>Three things. The first is whether <strong>Google&rsquo;s own bidding closes the gap</strong> with third-party tools like Groas. They have access to more data than any third party, and the gap that exists today (in my testing) is mostly explained by Google&rsquo;s objective function not matching what advertisers actually want. If that changes &mdash; if Smart Bidding gets a real margin-aware mode, or a real multi-touch attribution mode &mdash; the calculus on third-party bidding shifts substantially.</p>
+
+    <p>The second is <strong>Performance Max&rsquo;s creative side</strong>. The bidding side of PMax is fine; the creative side, where Google auto-generates ad variants, is still uneven enough that I won&rsquo;t turn it on for clients without an audit. Whether Google fixes this by year-end determines whether agencies need a creative-ops tool (Smartly.io, Tagger) inserted into the stack, or whether the platform handles it natively.</p>
+
+    <p>The third is whether <strong>AI sales pitches finally start being honest</strong>. I&rsquo;ve had nine vendor pitches this year that claimed &ldquo;AI&rdquo; for what turned out to be a rules engine with a thin GPT-4 wrapper for copy generation. The buyer side is wising up; the seller side will follow eventually. When it does, the conversations get easier &mdash; and the actual ML-driven tools get appropriately differentiated from the marketing-AI tools.</p>
+
+    <div class="hr"></div>
+
+    <p>That&rsquo;s the year. The stack we ended on isn&rsquo;t the stack I budgeted for in January, and the work I did in December didn&rsquo;t look much like the work I did in February. I expect the same will be true a year from now. Next May I&rsquo;ll write another one of these. If you&rsquo;re running an agency book and any of this sounds familiar &mdash; or if you&rsquo;ve learned something different from your own year &mdash; I&rsquo;d like to hear it.</p>
+
+    <p style="margin-top:32px;text-align:right;font-style:italic;color:var(--muted)">&mdash; Simran Khetwani, May 2026</p>
+</article>
+
+<aside class="footnotes">
+    <h3>Footnotes</h3>
+    <ol>
+        <li id="fn1">By &ldquo;Performance Max improving&rdquo; I mean specifically the budget-pacing and conversion-value optimization layers. Audience-signal handling has gotten incrementally better; the creative-generation side remains uneven.</li>
+        <li id="fn2">The data-volume effect is consistent with how a per-account deep-learning model trains. Below roughly $20K/month in spend, you don&rsquo;t generate enough conversion data for a custom model to outperform Google&rsquo;s portfolio-trained Smart Bidding. Above $20K, the gap opens; above $100K, it tends to widen further.</li>
+    </ol>
+</aside>
+
+<div class="maintained">
+    Written by <a href="/about/">Simran Khetwani</a>. Stack reviews and individual tool deep-dives at <a href="/tools/">/tools/</a>. To correspond about the letter: <a href="/contact/">contact</a>.
 </div>
 
-<!--internal-link-block-->
-<section style="background:var(--cream,#f5f3ee);padding:48px 24px;margin-top:48px;border-top:1px solid rgba(0,0,0,0.08)"><div style="max-width:1100px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:32px"><div><h5 style="font-size:11px;text-transform:uppercase;letter-spacing:0.14em;color:var(--red,#d63031);margin:0 0 12px;font-weight:800;font-family:'Inter',sans-serif">Alternatives</h5><ul style="list-style:none;padding:0;margin:0;font-size:14px;line-height:2;font-family:'Inter',sans-serif">
-<li><a href="/alternatives/optmyzr/">Optmyzr alternatives</a></li>
-<li><a href="/alternatives/madgicx/">Madgicx alternatives</a></li>
-<li><a href="/alternatives/skai/">Skai alternatives</a></li>
-<li><a href="/alternatives/adzooma/">Adzooma alternatives</a></li>
-</ul></div><div><h5 style="font-size:11px;text-transform:uppercase;letter-spacing:0.14em;color:var(--red,#d63031);margin:0 0 12px;font-weight:800;font-family:'Inter',sans-serif">Head-to-head</h5><ul style="list-style:none;padding:0;margin:0;font-size:14px;line-height:2;font-family:'Inter',sans-serif">
-<li><a href="/compare/groas-vs-optmyzr/">Groas.ai vs Optmyzr</a></li>
-<li><a href="/compare/groas-vs-madgicx/">Groas.ai vs Madgicx</a></li>
-</ul></div><div><h5 style="font-size:11px;text-transform:uppercase;letter-spacing:0.14em;color:var(--red,#d63031);margin:0 0 12px;font-weight:800;font-family:'Inter',sans-serif">By use case</h5><ul style="list-style:none;padding:0;margin:0;font-size:14px;line-height:2;font-family:'Inter',sans-serif">
-<li><a href="/for/agencies/">For PPC agencies</a></li>
-<li><a href="/for/freelancers/">For Freelancers</a></li>
-<li><a href="/for/consultants/">For Consultants</a></li>
-</ul></div><div><h5 style="font-size:11px;text-transform:uppercase;letter-spacing:0.14em;color:var(--red,#d63031);margin:0 0 12px;font-weight:800;font-family:'Inter',sans-serif">Guides</h5><ul style="list-style:none;padding:0;margin:0;font-size:14px;line-height:2;font-family:'Inter',sans-serif"><li><a href="/guide/">Field guide</a></li><li><a href="/methodology/">Methodology</a></li><li><a href="/tools/groas/">Groas.ai review</a></li></ul></div></div></section>
+</div>
 
-<footer><div class="foot">
-    <div><h5>The PPC Tools</h5><p>Agency-tested PPC tool reviews from an operator who runs a working book of business.</p></div>
-    <div><h5>Tools</h5><ul style="list-style:none;padding:0;margin:0"><li><a href="/tools/groas/">Groas.ai</a></li><li><a href="/tools/optmyzr/">Optmyzr</a></li><li><a href="/tools/madgicx/">Madgicx</a></li></ul></div>
-    <div><h5>About</h5><ul style="list-style:none;padding:0;margin:0"><li><a href="/methodology/">Methodology</a></li><li><a href="/about/">About Simran Khetwani</a></li><li><a href="/contact/">Contact</a></li></ul></div>
-</div></footer>
+<footer>
+    <div class="foot-inner">
+        <div>The PPC Tools &middot; an annual letter</div>
+        <div>
+            <a href="/tools/">Tool reviews</a>
+            <a href="/about/">About Simran</a>
+            <a href="/contact/">Contact</a>
+        </div>
+    </div>
+</footer>
+
 </body>
 </html>
