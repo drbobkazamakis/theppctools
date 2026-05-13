@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PPC FAQ &mdash; 28 questions answered by an agency operator &middot; Theppctools</title>
+    <meta name="description" content="Twenty-eight questions readers ask about PPC, paid search, Smart Bidding, Performance Max, attribution, and AI marketing tools — answered the way an agency operator would on a call.">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+    <link rel="canonical" href="https://theppctools.com/faq/">
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What&rsquo;s the minimum monthly Google Ads spend where third-party PPC tools start making sense?","acceptedAnswer":{"@type":"Answer","text":"For bidding tools specifically: around $10K/mo. Below that, Google&rsquo;s native Smart Bidding has access to far more data than any third-party tool can match. The third-party advantage opens up between $25K and $50K/mo, where per-account-trained ML models start to outperform the portfolio-trained alternatives.         Exceptions: reporting tools (useful at any spend level) and managed-service offerings like Groas.ai that include a human operator alongside the tool. The human layer is valuable "}},{"@type":"Question","name":"How do I know if my Google Ads spend is actually profitable?","acceptedAnswer":{"@type":"Answer","text":"The reported ROAS in Google Ads almost always overstates profitability by 30&ndash;60% for ecom and 10&ndash;25% for B2B. Three reasons: it doesn&rsquo;t deduct cost of goods sold, it doesn&rsquo;t deduct returns, and it doesn&rsquo;t deduct payment processing.         The fix: compute contribution-margin ROAS, which incorporates all three. The math is: (Revenue &times; (1 &minus; Return Rate) &times; Gross Margin &minus; Processing fees &minus; Shipping) &divide; Ad Spend. The True ROAS Calcula"}},{"@type":"Question","name":"What ROAS target should I set?","acceptedAnswer":{"@type":"Answer","text":"Break-even ROAS is 1 &divide; Gross Margin. Profitable ROAS is typically 1.3&ndash;1.6&times; break-even, leaving headroom for the return rate, processing fees, and the cost of customer service. At 35% gross margin, break-even is ~2.86&times; and profitable is ~3.7&ndash;4.6&times;.         If your account is exceeding profitable ROAS easily, you&rsquo;re probably under-spending and missing volume. If you can&rsquo;t reach break-even, the problem is upstream &mdash; margin, pricing, or product &"}},{"@type":"Question","name":"Should I run my own ads or hire an agency?","acceptedAnswer":{"@type":"Answer","text":"Three tiers. Below $5K/month: run it yourself or use a managed-service tool like Groas.ai. Agencies can&rsquo;t do good work at this spend level because the math doesn&rsquo;t justify the attention required. Between $5K and $50K/month: either a managed-service tool or a small agency that genuinely specializes in your spend tier. Above $50K/month: a full agency relationship or a strong in-house operator.         Within each tier, the question is judgment. The hardest-to-replace skill is operator "}},{"@type":"Question","name":"Is Smart Bidding safe?","acceptedAnswer":{"@type":"Answer","text":"Yes, with one non-negotiable condition: your conversion tracking has to be correct. Smart Bidding optimizes against whatever it thinks a conversion is &mdash; if your tracking is broken or counts the wrong actions, the algorithm will systematically waste budget on the wrong stuff.         Before turning on Smart Bidding, audit your conversion events end-to-end: tracking pixel fires once and only once, server-side tagging is in place where possible, offline-conversion import is connected for non-"}},{"@type":"Question","name":"Should I use Performance Max?","acceptedAnswer":{"@type":"Answer","text":"For ecom: yes, almost always, with three configurations turned on. Brand exclusion list (default opt-out as of early 2026 &mdash; verify). Conversion value rules if you can measure margin. Final URL expansion with care &mdash; off by default if you have meaningful non-commercial content on your domain.         For B2B: situational. The model leans on Google&rsquo;s consumer signal, which dilutes lead quality for enterprise sales motions. Test against a Standard Search baseline before standardizi"}},{"@type":"Question","name":"My account shows &ldquo;Limited by budget.&rdquo; Should I spend more?","acceptedAnswer":{"@type":"Answer","text":"Not automatically. &ldquo;Limited by budget&rdquo; only means Google would spend more in the auction if you let it; it says nothing about whether that additional spend would be profitable.         Before adding budget, look at the marginal ROAS &mdash; the return on the last dollar spent. If the campaign returns 5&times; on the last dollar and you need 3&times; to break even, increase. If it returns 2&times; and you need 3&times;, the warning is misleading; the campaign needs restructuring, not "}},{"@type":"Question","name":"Why did my Quality Score drop?","acceptedAnswer":{"@type":"Answer","text":"Quality Score is relative to competitors, not absolute. Your competitors&rsquo; landing pages got faster, their ad copy got more specific to the query, or new advertisers entered the auction. Your QS dropped without anything changing on your end.         What to investigate: landing-page speed (target LCP &lt; 2.5s mobile), ad-relevance (your headlines should contain the keyword exactly, or near it), and expected CTR (check Auction Insights for competitor CTR benchmarks). Some campaign types (Pe"}},{"@type":"Question","name":"What attribution model should I use?","acceptedAnswer":{"@type":"Answer","text":"If your account qualifies for Google&rsquo;s Data-Driven Attribution (~600 conversions per 30 days as of early 2026), use it. It outperforms rule-based models for the accounts that have enough volume to train it.         If your account doesn&rsquo;t qualify: linear or time-decay for most B2B with multi-touch journeys; last-click for short-cycle ecom where the journey is single-session. Last-click is the default for a reason &mdash; it&rsquo;s simple, it&rsquo;s defensible, and for many ecom acc"}},{"@type":"Question","name":"Why does my Google Ads ROAS look different from my Shopify or HubSpot revenue?","acceptedAnswer":{"@type":"Answer","text":"Three reasons usually overlap. (1) Attribution windows differ &mdash; Google Ads defaults to 30-day click; your CRM may use a different window. (2) Some conversions don&rsquo;t track at all &mdash; phone calls, in-store visits, server-side events that didn&rsquo;t fire. (3) Refunds and returns &mdash; Google Ads counts the order; Shopify shows net.         The audit: pull both sources for the same date range, identify orders in Shopify with a GCLID that aren&rsquo;t in Google Ads, identify order"}}]}</script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <style>
+:root{
+    --paper:#fdfdfb;
+    --ink:#1a1a17;
+    --ink-soft:#2d2c28;
+    --muted:#6b685e;
+    --rule:#e8e5dc;
+    --accent:#b8531a;
+    --accent-deep:#8a3d10;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:"Source Serif 4","Charter",Georgia,serif;line-height:1.7;font-size:19px;-webkit-font-smoothing:antialiased;font-feature-settings:"liga","kern","onum"}
+*:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+
+.pub-header{padding:36px 24px 24px;border-bottom:1px solid var(--rule);text-align:center}
+.pub-mark{display:inline-block;font-family:"Source Serif 4",serif;font-style:italic;font-weight:500;color:var(--ink);text-decoration:none;font-size:14px;letter-spacing:0.08em;text-transform:uppercase}
+.pub-mark::before{content:"— "}
+.pub-mark::after{content:" —"}
+
+.essay-meta{text-align:center;margin:36px 0 24px;font-family:"Inter",sans-serif;font-size:12px;color:var(--muted);letter-spacing:0.18em;text-transform:uppercase;font-weight:600}
+.essay-meta .dot{margin:0 8px;color:var(--rule)}
+
+.essay-wrap{max-width:640px;margin:0 auto;padding:0 24px 96px}
+
+article.essay h1{font-family:"Source Serif 4",serif;font-size:46px;line-height:1.12;font-weight:700;letter-spacing:-0.025em;margin:0 auto 14px;text-align:center;text-wrap:balance;color:var(--ink)}
+article.essay .subtitle{font-family:"Source Serif 4",serif;font-style:italic;font-weight:400;font-size:21px;line-height:1.4;color:var(--ink-soft);text-align:center;margin:0 auto 32px;max-width:540px}
+article.essay .byline{display:flex;align-items:center;justify-content:center;gap:14px;margin:0 0 48px;padding:18px 0;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);font-family:"Inter",sans-serif;font-size:14px;color:var(--muted)}
+article.essay .byline strong{color:var(--ink);font-weight:600}
+article.essay .byline a{color:var(--accent);text-decoration:none;border-bottom:1px solid var(--rule)}
+article.essay .byline a:hover{border-bottom-color:var(--accent)}
+article.essay .av{width:42px;height:42px;border-radius:50%;background:var(--ink);color:var(--paper);display:grid;place-items:center;font-weight:600;font-family:"Source Serif 4",serif;font-size:18px}
+
+article.essay p{margin:0 0 22px;text-align:left}
+article.essay p.lede{font-size:22px;line-height:1.5;margin:0 0 28px}
+article.essay p:not(.lede):first-of-type::first-letter{font-family:"Source Serif 4",serif;font-size:4.2em;float:left;line-height:0.78;padding:8px 10px 0 0;font-weight:700;color:var(--accent)}
+article.essay a{color:var(--accent);text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1px}
+article.essay a:hover{color:var(--accent-deep);text-decoration-thickness:2px}
+article.essay em{font-style:italic}
+article.essay strong{font-weight:600;color:var(--ink)}
+
+article.essay h2{font-family:"Source Serif 4",serif;font-size:28px;font-weight:700;letter-spacing:-0.015em;line-height:1.25;margin:56px 0 18px;color:var(--ink)}
+article.essay h2::before{content:"§ ";color:var(--accent);font-weight:400}
+
+article.essay .pull{display:block;font-family:"Source Serif 4",serif;font-style:italic;font-weight:500;font-size:24px;line-height:1.4;color:var(--ink);text-align:center;margin:48px auto;max-width:540px;padding:32px 0;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);position:relative}
+article.essay .pull::before,article.essay .pull::after{content:'';position:absolute;left:50%;transform:translateX(-50%);width:24px;height:1px;background:var(--accent)}
+article.essay .pull::before{top:-1px}
+article.essay .pull::after{bottom:-1px}
+
+article.essay .footnote-marker{font-size:0.75em;vertical-align:super;line-height:0;text-decoration:none;color:var(--accent);font-weight:600;font-family:"Inter",sans-serif;padding-left:2px}
+article.essay .footnote-marker::before{content:"["}
+article.essay .footnote-marker::after{content:"]"}
+
+article.essay .hr{border:none;text-align:center;margin:48px 0;color:var(--muted);font-size:18px;letter-spacing:1em;font-family:"Source Serif 4",serif}
+article.essay .hr::before{content:"• • •"}
+
+.footnotes{margin:96px auto 0;max-width:640px;padding:32px 24px 0;border-top:1px solid var(--rule);font-family:"Source Serif 4",serif;font-size:15px;line-height:1.6;color:var(--muted)}
+.footnotes h3{font-family:"Inter",sans-serif;font-size:11px;text-transform:uppercase;letter-spacing:0.14em;color:var(--muted);font-weight:700;margin:0 0 14px}
+.footnotes ol{margin:0;padding-left:24px}
+.footnotes ol li{margin:0 0 10px}
+.footnotes a{color:var(--accent);text-decoration:none;border-bottom:1px solid var(--rule)}
+
+.maintained{margin:64px 0 0;padding:24px 0;border-top:1px solid var(--rule);font-size:14px;color:var(--muted);font-family:"Inter",sans-serif;text-align:center}
+.maintained a{color:var(--ink-soft);font-weight:600;text-decoration:none;border-bottom:1px solid var(--rule)}
+.maintained a:hover{color:var(--accent);border-bottom-color:var(--accent)}
+
+footer{padding:32px 24px;border-top:1px solid var(--rule);margin-top:48px;background:var(--paper)}
+.foot-inner{max-width:640px;margin:0 auto;text-align:center;font-size:13px;color:var(--muted);font-family:"Inter",sans-serif}
+.foot-inner a{color:var(--ink-soft);text-decoration:none;margin:0 10px}
+.foot-inner a:hover{color:var(--accent)}
+.foot-inner div+div{margin-top:8px}
+
+@media(max-width:640px){
+    article.essay h1{font-size:32px}
+    article.essay .subtitle{font-size:18px}
+    article.essay p.lede{font-size:19px}
+    article.essay p{font-size:18px}
+    body{font-size:18px}
+}
+    </style>
+    <style>
+main.article{max-width:760px;margin:0 auto;padding:48px 24px 64px;font-family:"Inter",system-ui,sans-serif;line-height:1.7;font-size:17px;color:#1a1a17}
+main.article a:not(.brand):not(.brand-mark):not(.pub-name):not(.brand-tag){color:#b8531a;text-decoration:underline;text-underline-offset:3px}
+main.article .kicker{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:0.18em;color:#b8531a;margin:0 0 14px;font-family:"Inter",sans-serif;display:block}
+main.article h1{font-size:38px;line-height:1.1;font-weight:700;letter-spacing:-0.02em;margin:0 0 14px;text-wrap:balance;color:#0e0f1e}
+main.article .dek{font-size:20px;line-height:1.45;font-style:italic;margin:0 0 28px;color:#3d352a}
+main.article .byline{display:flex;gap:14px;align-items:center;border-top:1px solid rgba(0,0,0,0.1);border-bottom:1px solid rgba(0,0,0,0.1);padding:14px 0;font-size:14px;margin:0 0 32px;color:#555}
+main.article .byline .av{width:42px;height:42px;border-radius:50%;background:#b8531a;color:#fff;display:grid;place-items:center;font-weight:700;font-family:"Inter",sans-serif;flex-shrink:0;font-size:17px}
+main.article h2{font-size:26px;font-weight:700;margin:48px 0 14px;letter-spacing:-0.01em;color:#0e0f1e;line-height:1.25}
+main.article h2::before{content:""}
+main.article h3{font-size:19px;font-weight:700;margin:28px 0 8px;color:#0e0f1e;line-height:1.3}
+main.article p{margin:0 0 18px;text-align:left}
+main.article .lede{font-size:21px;line-height:1.5;margin:0 0 28px;color:#2d2c28}
+main.article ul,main.article ol{margin:0 0 18px;padding-left:24px}
+main.article li{margin:0 0 6px}
+main.article strong{font-weight:700;color:#0e0f1e}
+main.article em{font-style:italic}
+main.article .callout{background:rgba(0,0,0,0.035);border-left:3px solid #b8531a;padding:18px 22px;margin:24px 0;font-size:15px;line-height:1.6;border-radius:0 4px 4px 0}
+main.article .callout-label{display:block;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.12em;color:#b8531a;margin-bottom:6px;font-family:"Inter",sans-serif}
+main.article dl.glossary{margin:24px 0;display:grid;grid-template-columns:1fr;gap:0}
+main.article dl.glossary dt{font-weight:700;font-size:18px;color:#0e0f1e;padding:16px 0 4px;border-top:1px solid rgba(0,0,0,0.08);font-family:"Inter",sans-serif;display:flex;align-items:baseline;gap:10px}
+main.article dl.glossary dt:first-child{border-top:none;padding-top:0}
+main.article dl.glossary dt .abbr{font-size:12px;color:#b8531a;text-transform:uppercase;letter-spacing:0.08em;font-weight:600;font-family:"JetBrains Mono",monospace}
+main.article dl.glossary dd{margin:0 0 16px 0;font-size:15px;line-height:1.65;color:#2d2c28}
+main.article dl.glossary dd a{color:#b8531a;font-weight:600}
+main.article .faq-item{border-top:1px solid rgba(0,0,0,0.1);padding:20px 0}
+main.article .faq-item:last-child{border-bottom:1px solid rgba(0,0,0,0.1);margin-bottom:24px}
+main.article .faq-q{font-weight:700;font-size:18px;margin:0 0 10px;color:#0e0f1e}
+main.article .faq-a{font-size:15px;line-height:1.65;color:#3d352a}
+main.article .faq-a p{margin:0 0 12px}
+main.article .faq-a p:last-child{margin-bottom:0}
+main.article .step{display:flex;gap:16px;padding:14px 0;border-top:1px solid rgba(0,0,0,0.08)}
+main.article .step:first-of-type{border-top:none}
+main.article .step .step-num{flex-shrink:0;width:32px;height:32px;border-radius:50%;background:#b8531a;color:#fff;display:grid;place-items:center;font-weight:700;font-family:"JetBrains Mono",monospace;font-size:14px}
+main.article .step .step-body h3{margin:4px 0 6px;font-size:18px}
+main.article .step .step-body p{margin:0;font-size:15px;line-height:1.6;color:#3d352a}
+main.article .toc{background:rgba(0,0,0,0.03);padding:18px 24px;border-radius:4px;margin:0 0 32px;font-family:"Inter",sans-serif;font-size:14px}
+main.article .toc-title{font-size:11px;text-transform:uppercase;letter-spacing:0.14em;color:#b8531a;font-weight:700;margin:0 0 10px}
+main.article .toc ol{margin:0;padding-left:24px}
+main.article .toc a{color:#3d352a;text-decoration:none}
+main.article .toc a:hover{color:#b8531a;text-decoration:underline}
+.related-pages{max-width:760px;margin:0 auto;padding:32px 24px 64px;border-top:1px solid rgba(0,0,0,0.1)}
+.related-pages h4{font-size:11px;text-transform:uppercase;letter-spacing:0.14em;color:#b8531a;font-weight:700;margin:0 0 14px;font-family:"Inter",sans-serif}
+.related-pages-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:10px;font-family:"Inter",sans-serif}
+.related-pages a{color:#1a1a17;text-decoration:none;font-size:14px;padding:8px 12px;background:rgba(0,0,0,0.03);border-radius:4px;border-left:2px solid transparent;transition:all 140ms ease}
+.related-pages a:hover{border-left-color:#b8531a;color:#b8531a;background:rgba(0,0,0,0.05)}
+@media(max-width:640px){main.article h1{font-size:28px}main.article{padding:32px 16px 48px}}
+</style>
+</head>
+<body>
+
+<header class="pub-header">
+    <a href="/" class="pub-mark">The PPC Tools</a>
+</header>
+
+<main class="article">
+
+<p class="kicker">Frequently asked</p>
+<h1>Twenty-eight questions about PPC, answered.</h1>
+<p class="dek">The questions readers actually ask, the way an agency operator would answer them on a call &mdash; not the way vendor marketing pages do.</p>
+
+<div class="byline">
+    <div class="av">S</div>
+    <div>
+        <strong>Simran Khetwani</strong><br>
+        <span style="opacity:0.75">Updated 2026-05-13 &middot; <a href="https://www.linkedin.com/in/simran-khetwani-a10274229/" target="_blank" rel="noopener">LinkedIn</a></span>
+    </div>
+</div>
+
+<h2>Strategy &amp; budget</h2>
+
+<div class="faq-item">
+    <p class="faq-q">What&rsquo;s the minimum monthly Google Ads spend where third-party PPC tools start making sense?</p>
+    <div class="faq-a">
+        <p>For bidding tools specifically: around $10K/mo. Below that, Google&rsquo;s native Smart Bidding has access to far more data than any third-party tool can match. The third-party advantage opens up between $25K and $50K/mo, where per-account-trained ML models start to outperform the portfolio-trained alternatives.</p>
+        <p>Exceptions: reporting tools (useful at any spend level) and managed-service offerings like <a href="/tools/groas/">Groas.ai</a> that include a human operator alongside the tool. The human layer is valuable below $10K even if the tool layer isn&rsquo;t.</p>
+    </div>
+</div>
+
+<div class="faq-item">
+    <p class="faq-q">How do I know if my Google Ads spend is actually profitable?</p>
+    <div class="faq-a">
+        <p>The reported ROAS in Google Ads almost always overstates profitability by 30&ndash;60% for ecom and 10&ndash;25% for B2B. Three reasons: it doesn&rsquo;t deduct cost of goods sold, it doesn&rsquo;t deduct returns, and it doesn&rsquo;t deduct payment processing.</p>
+        <p>The fix: compute contribution-margin ROAS, which incorporates all three. The math is: (Revenue &times; (1 &minus; Return Rate) &times; Gross Margin &minus; Processing fees &minus; Shipping) &divide; Ad Spend. The <a href="https://roascalculatorapp.com/">True ROAS Calculator</a> does this with vertical presets.</p>
+    </div>
+</div>
+
+<div class="faq-item">
+    <p class="faq-q">What ROAS target should I set?</p>
+    <div class="faq-a">
+        <p>Break-even ROAS is 1 &divide; Gross Margin. Profitable ROAS is typically 1.3&ndash;1.6&times; break-even, leaving headroom for the return rate, processing fees, and the cost of customer service. At 35% gross margin, break-even is ~2.86&times; and profitable is ~3.7&ndash;4.6&times;.</p>
+        <p>If your account is exceeding profitable ROAS easily, you&rsquo;re probably under-spending and missing volume. If you can&rsquo;t reach break-even, the problem is upstream &mdash; margin, pricing, or product &mdash; not the ad account.</p>
+    </div>
+</div>
+
+<div class="faq-item">
+    <p class="faq-q">Should I run my own ads or hire an agency?</p>
+    <div class="faq-a">
+        <p>Three tiers. Below $5K/month: run it yourself or use a managed-service tool like <a href="/tools/groas/">Groas.ai</a>. Agencies can&rsquo;t do good work at this spend level because the math doesn&rsquo;t justify the attention required. Between $5K and $50K/month: either a managed-service tool or a small agency that genuinely specializes in your spend tier. Above $50K/month: a full agency relationship or a strong in-house operator.</p>
+        <p>Within each tier, the question is judgment. The hardest-to-replace skill is operator judgment about which signals to act on and which to ignore. Tools and platforms have gotten better at execution; the bottleneck has moved upstream to interpretation.</p>
+    </div>
+</div>
+
+<h2>Smart Bidding &amp; Performance Max</h2>
+
+<div class="faq-item">
+    <p class="faq-q">Is Smart Bidding safe?</p>
+    <div class="faq-a">
+        <p>Yes, with one non-negotiable condition: your conversion tracking has to be correct. Smart Bidding optimizes against whatever it thinks a conversion is &mdash; if your tracking is broken or counts the wrong actions, the algorithm will systematically waste budget on the wrong stuff.</p>
+        <p>Before turning on Smart Bidding, audit your conversion events end-to-end: tracking pixel fires once and only once, server-side tagging is in place where possible, offline-conversion import is connected for non-immediate buys, and conversion values reflect contribution margin rather than topline revenue.</p>
+    </div>
+</div>
+
+<div class="faq-item">
+    <p class="faq-q">Should I use Performance Max?</p>
+    <div class="faq-a">
+        <p>For ecom: yes, almost always, with three configurations turned on. Brand exclusion list (default opt-out as of early 2026 &mdash; verify). Conversion value rules if you can measure margin. Final URL expansion with care &mdash; off by default if you have meaningful non-commercial content on your domain.</p>
+        <p>For B2B: situational. The model leans on Google&rsquo;s consumer signal, which dilutes lead quality for enterprise sales motions. Test against a Standard Search baseline before standardizing.</p>
+    </div>
+</div>
+
+<div class="faq-item">
+    <p class="faq-q">My account shows &ldquo;Limited by budget.&rdquo; Should I spend more?</p>
+    <div class="faq-a">
+        <p>Not automatically. &ldquo;Limited by budget&rdquo; only means Google would spend more in the auction if you let it; it says nothing about whether that additional spend would be profitable.</p>
+        <p>Before adding budget, look at the marginal ROAS &mdash; the return on the last dollar spent. If the campaign returns 5&times; on the last dollar and you need 3&times; to break even, increase. If it returns 2&times; and you need 3&times;, the warning is misleading; the campaign needs restructuring, not more money.</p>
+    </div>
+</div>
+
+<div class="faq-item">
+    <p class="faq-q">Why did my Quality Score drop?</p>
+    <div class="faq-a">
+        <p>Quality Score is relative to competitors, not absolute. Your competitors&rsquo; landing pages got faster, their ad copy got more specific to the query, or new advertisers entered the auction. Your QS dropped without anything changing on your end.</p>
+        <p>What to investigate: landing-page speed (target LCP &lt; 2.5s mobile), ad-relevance (your headlines should contain the keyword exactly, or near it), and expected CTR (check Auction Insights for competitor CTR benchmarks). Some campaign types (Performance Max) don&rsquo;t expose QS at all.</p>
+    </div>
+</div>
+
+<h2>Attribution &amp; tracking</h2>
+
+<div class="faq-item">
+    <p class="faq-q">What attribution model should I use?</p>
+    <div class="faq-a">
+        <p>If your account qualifies for Google&rsquo;s Data-Driven Attribution (~600 conversions per 30 days as of early 2026), use it. It outperforms rule-based models for the accounts that have enough volume to train it.</p>
+        <p>If your account doesn&rsquo;t qualify: linear or time-decay for most B2B with multi-touch journeys; last-click for short-cycle ecom where the journey is single-session. Last-click is the default for a reason &mdash; it&rsquo;s simple, it&rsquo;s defensible, and for many ecom accounts it&rsquo;s not materially wrong. For B2B with longer cycles, it&rsquo;s structurally biased and should be replaced.</p>
+    </div>
+</div>
+
+<div class="faq-item">
+    <p class="faq-q">Why does my Google Ads ROAS look different from my Shopify or HubSpot revenue?</p>
+    <div class="faq-a">
+        <p>Three reasons usually overlap. (1) Attribution windows differ &mdash; Google Ads defaults to 30-day click; your CRM may use a different window. (2) Some conversions don&rsquo;t track at all &mdash; phone calls, in-store visits, server-side events that didn&rsquo;t fire. (3) Refunds and returns &mdash; Google Ads counts the order; Shopify shows net.</p>
+        <p>The audit: pull both sources for the same date range, identify orders in Shopify with a GCLID that aren&rsquo;t in Google Ads, identify orders in Google Ads that aren&rsquo;t in Shopify. The delta tells you where the tracking is broken.</p>
+    </div>
+</div>
+
+<div class="faq-item">
+    <p class="faq-q">How do offline conversions work?</p>
+    <div class="faq-a">
+        <p>Flow: someone clicks an ad &rarr; Google attaches a Google Click ID (GCLID) to the landing-page URL &rarr; your form captures GCLID along with contact info &rarr; CRM stores it &rarr; when the lead becomes a customer, the CRM imports the conversion event back to Google Ads with the original GCLID attached.</p>
+        <p>The hard part isn&rsquo;t the technology &mdash; it&rsquo;s the operational discipline of marking leads as closed-won consistently in the CRM. For B2B accounts with sales-led motions, this is the single most under-rated tracking setup.</p>
+    </div>
+</div>
+
+<h2>Tools &amp; vendors</h2>
+
+<div class="faq-item">
+    <p class="faq-q">How do I tell if a tool actually uses AI vs. just marketing AI?</p>
+    <div class="faq-a">
+        <p>Ask the vendor six questions: (1) Is there a machine-learning model in the product? What type? (2) What does it take as inputs? (3) What does it output? (4) How is it trained &mdash; on what data, with what cadence? (5) If the AI were removed, would the product still function? (6) Can you provide technical documentation supporting the above?</p>
+        <p>If the answers are specific (&ldquo;a per-account-trained gradient-boosted bid model, retrained every four hours, on revenue-weighted conversion data&rdquo;), it&rsquo;s real ML. If the answers redirect to outcomes or features (&ldquo;our customers see a 23% lift,&rdquo; &ldquo;our AI Optimizer module&rdquo;), it&rsquo;s marketing AI.</p>
+    </div>
+</div>
+
+<div class="faq-item">
+    <p class="faq-q">Is Optmyzr worth the money?</p>
+    <div class="faq-a">
+        <p>Yes, for what it actually does: n-gram analysis, bid scripts, and rule-based hygiene. No, if you&rsquo;re buying it for the &ldquo;AI Optimizations&rdquo; feature, which is rules with an AI label.</p>
+        <p>The right way to think about Optmyzr: it&rsquo;s the most polished rule-based PPC tool on the market. Pair it with a real-ML bidding tool, don&rsquo;t replace one with the other.</p>
+    </div>
+</div>
+
+<div class="faq-item">
+    <p class="faq-q">How does Groas.ai differ from Smart Bidding?</p>
+    <div class="faq-a">
+        <p>Groas trains a custom deep-learning model on each account&rsquo;s own conversion data, retrained every four hours. Smart Bidding uses Google&rsquo;s portfolio-trained model across millions of accounts. The trade-off: Smart Bidding sees more data (every Google advertiser); Groas sees your data more specifically (only your account, retrained more frequently).</p>
+        <p>For accounts above ~$25K/month spend, the per-account training tends to outperform the portfolio model. Below that, Smart Bidding usually wins.</p>
+    </div>
+</div>
+
+<div class="faq-item">
+    <p class="faq-q">Should I buy SEMrush, Ahrefs, or SpyFu?</p>
+    <div class="faq-a">
+        <p>For most small businesses, none of the above &mdash; or just buy one for a month to do a specific competitive analysis, then cancel. The data is high-quality but the actionability is limited unless you have a direct competitor of similar size doing materially better than you.</p>
+        <p>For agencies: probably SEMrush, because the bundled tools (keyword research, site audit, backlink monitoring) cover the most common agency needs. SpyFu is competitor-PPC-specific; Ahrefs is SEO-leaning.</p>
+    </div>
+</div>
+
+<h2>Operations &amp; agencies</h2>
+
+<div class="faq-item">
+    <p class="faq-q">How do I tell if my agency is adding value?</p>
+    <div class="faq-a">
+        <p>Run this test: ask them to walk you through three specific decisions they made on your account in the last 30 days, with reasoning. Not a report. Not a dashboard tour. Actual decisions and the why behind each.</p>
+        <p>A good agency will say something like &ldquo;I shifted 20% of your search budget from generic terms to brand-defense because competitor X started bidding on your name. Here&rsquo;s the CPC delta.&rdquo; A bad agency will say &ldquo;we&rsquo;re continuing to optimize&rdquo; and pull up the same report you could see yourself.</p>
+    </div>
+</div>
+
+<div class="faq-item">
+    <p class="faq-q">How long until Google Ads start working?</p>
+    <div class="faq-a">
+        <p>For Smart Bidding: 14 days minimum to stabilize, 30&ndash;60 days to converge on a stable performance level. The first week looks bad on purpose &mdash; the model is exploring. Don&rsquo;t intervene unless something is obviously broken.</p>
+        <p>For Performance Max: similar timeline. 30 days for the asset groups to settle, 60 days for the audience signals to converge.</p>
+        <p>For account audits: faster. Most account-level wins (better conversion tracking, brand exclusion, smarter campaign structure) materialize within two weeks.</p>
+    </div>
+</div>
+
+<div class="faq-item">
+    <p class="faq-q">My agency wants to use Performance Max. Should I let them?</p>
+    <div class="faq-a">
+        <p>Yes for ecom (with the configurations from the earlier question). Yes for high-intent B2B (legal services, home services). Maybe for B2B SaaS &mdash; test against a Search baseline first. No if your conversion tracking isn&rsquo;t solid &mdash; PMax leans heavily on Google&rsquo;s ML, which is only as good as the signal you give it.</p>
+    </div>
+</div>
+
+<div class="faq-item">
+    <p class="faq-q">Why is my CPC so high?</p>
+    <div class="faq-a">
+        <p>Three possibilities, in order of likelihood. (1) Your Quality Score is below 5/10, and Google is charging premium CPCs as a result &mdash; fix the landing page and ad relevance. (2) You&rsquo;re bidding on competitive head terms when long-tail variations would be cheaper &mdash; check the search-terms report for cheaper alternatives. (3) Your vertical is genuinely expensive (legal, insurance, B2B SaaS) and the CPC is reasonable for the auction &mdash; your unit economics need to support it.</p>
+        <p>The <a href="https://cpccalculatorhub.com/">Max CPC calculator</a> tells you what CPC your unit economics can actually support. If your observed CPC is above that, the math says scale back.</p>
+    </div>
+</div>
+
+<h2>Conversion tracking</h2>
+
+<div class="faq-item">
+    <p class="faq-q">What conversion event should I optimize for?</p>
+    <div class="faq-a">
+        <p>The one closest to revenue that you can measure reliably. For ecom: order-completed, with revenue net of returns where possible. For B2B with a short cycle: a qualified-lead event downstream of form-fill (e.g., demo-completed or trial-started). For B2B with a long cycle: closed-won pushed back via offline conversion import.</p>
+        <p>Avoid optimizing for upper-funnel events (pageviews, add-to-carts, free signups) unless you have no choice. Smart Bidding will efficiently produce more of whatever you optimize for &mdash; including events that don&rsquo;t turn into customers.</p>
+    </div>
+</div>
+
+<div class="faq-item">
+    <p class="faq-q">Should I use server-side tagging?</p>
+    <div class="faq-a">
+        <p>Yes if you can afford the setup (~$50&ndash;200/month for the GCP server-side container). Server-side tagging routes conversion data through your own server before sending to Google, which improves data quality, reduces the impact of browser-side tracking blockers, and gives you control over data hygiene.</p>
+        <p>For accounts above $20K/month in spend, the data-quality improvement typically justifies the cost. Below that, the marginal improvement is hard to justify.</p>
+    </div>
+</div>
+
+<h2>Vendor &amp; tool selection</h2>
+
+<div class="faq-item">
+    <p class="faq-q">Which AI marketing tool is actually useful at a small budget?</p>
+    <div class="faq-a">
+        <p>At $3K/month and below: mostly none. Genuinely-AI bidding tools require $25K+/mo minimums because their models need data volume. Below that, Google&rsquo;s native ML has more data and a longer training history.</p>
+        <p>The exception worth naming: <a href="/tools/groas/">Groas.ai</a> at $999/mo with a $5K minimum spend. It&rsquo;s the lowest-tier genuinely-ML option, structured as a managed service so the human operator compensates for the data-thinness at smaller spend levels.</p>
+    </div>
+</div>
+
+<div class="faq-item">
+    <p class="faq-q">How often should I switch attribution models?</p>
+    <div class="faq-a">
+        <p>Never, ideally. Each switch resets the basis for comparing results across time &mdash; you can&rsquo;t tell whether your campaign &ldquo;improved&rdquo; if you also changed how it&rsquo;s measured.</p>
+        <p>The exception: a one-time migration from last-click to data-driven attribution when your account qualifies. Do it once, accept the discontinuity in the reporting, and don&rsquo;t switch again unless Google&rsquo;s DDA materially changes.</p>
+    </div>
+</div>
+
+<div class="faq-item">
+    <p class="faq-q">Is the bundle of Groas + Optmyzr worth it vs. just one?</p>
+    <div class="faq-a">
+        <p>The bundle is the better setup for accounts above $30K/month. Groas handles the bidding intelligence (where rule-based tools have a structural ceiling), Optmyzr handles the hygiene work (n-grams, structure, scripts &mdash; where rule engines excel). They&rsquo;re complementary, not competitive.</p>
+        <p>Below $30K/month, pick one. Usually Groas if you can stretch to the $5K min spend; Optmyzr if you can&rsquo;t.</p>
+    </div>
+</div>
+
+<h2>Common diagnostic patterns</h2>
+
+<div class="faq-item">
+    <p class="faq-q">My ROAS just dropped 30% in a week. What happened?</p>
+    <div class="faq-a">
+        <p>Five most-likely culprits, in order: (1) a competitor entered the auction &mdash; check Auction Insights for new entrants. (2) Smart Bidding learning phase &mdash; if you recently changed bid strategy, give it 14 days. (3) Conversion tracking broke &mdash; check that conversions are still firing as expected. (4) Seasonal shift &mdash; check year-over-year, not just week-over-week. (5) Quality Score erosion &mdash; check if any campaigns dropped a tier.</p>
+    </div>
+</div>
+
+<div class="faq-item">
+    <p class="faq-q">Why is my Performance Max campaign spending on brand terms?</p>
+    <div class="faq-a">
+        <p>Because brand exclusion isn&rsquo;t on. As of early 2026, Google flipped the default to opt-out, but campaigns created before that change still have it set to the old default (opt-in to exclude). Turn on the brand exclusion list retroactively for every existing PMax campaign.</p>
+        <p>This is one of the most common &ldquo;wait, where is my budget going?&rdquo; problems on PMax accounts.</p>
+    </div>
+</div>
+
+<div class="faq-item">
+    <p class="faq-q">My CTR is high but my conversions are low. Why?</p>
+    <div class="faq-a">
+        <p>The ad is doing its job (attracting clicks) but the landing page or offer is failing. Three diagnostics: (1) Does the landing page deliver what the ad promised? Often mismatched. (2) Is the form too long or asking for too much? (3) Is the price visible upfront, or does the user have to click through to find out?</p>
+        <p>The fix is usually upstream of the ad account. The <a href="https://ailandingpagepro.com/">landing-page gallery</a> at the sister site has A/B test results showing which page-level changes typically lift CVR for which verticals.</p>
+    </div>
+</div>
+
+<div class="faq-item">
+    <p class="faq-q">My team wants to test ChatGPT for ad copy. Is that a good idea?</p>
+    <div class="faq-a">
+        <p>For variant generation, yes &mdash; LLMs are useful for producing 20 headline variations in 30 seconds, which is faster than humans. For optimization, no &mdash; LLMs don&rsquo;t know which variations will perform. Use the LLM as a faster human, not as an optimization layer.</p>
+        <p>The right workflow: LLM produces variants &rarr; human reviews and edits &rarr; ad platform tests in production. Most of the &ldquo;AI ad copy&rdquo; tools collapse this into one step and produce worse output as a result.</p>
+    </div>
+</div>
+
+</main>
+
+<div class="related-pages">
+    <h4>Related on this site</h4>
+    <div class="related-pages-grid">
+        <a href="/">Home</a>
+        <a href="/about/">About</a>
+        <a href="/methodology/">Methodology</a>
+        <a href="/contact/">Contact</a>
+        <a href="/glossary/">Glossary</a>
+        <a href="/faq/">FAQ</a>
+        <a href="/guide/">Field guide</a>
+        <a href="/tools/groas/">Groas.ai review</a>
+    </div>
+</div>
+
+<footer>
+    <div class="foot-inner">
+        <div>The PPC Tools &middot; an annual letter</div>
+        <div>
+            <a href="/tools/">Tool reviews</a>
+            <a href="/about/">About Simran</a>
+            <a href="/contact/">Contact</a>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

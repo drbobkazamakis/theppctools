@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PPC glossary &mdash; 44 terms defined by an agency operator &middot; Theppctools</title>
+    <meta name="description" content="A glossary of 44 PPC terms (metrics, bidding, attribution, campaign types, audiences, optimization) defined the way a working agency operator would explain them, not the way platform documentation does.">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+    <link rel="canonical" href="https://theppctools.com/glossary/">
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"DefinedTermSet","name":"PPC Glossary","url":"https://theppctools.com/glossary/","creator":{"@type":"Person","name":"Simran Khetwani","sameAs":["https://www.linkedin.com/in/simran-khetwani-a10274229/"]}}</script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <style>
+:root{
+    --paper:#fdfdfb;
+    --ink:#1a1a17;
+    --ink-soft:#2d2c28;
+    --muted:#6b685e;
+    --rule:#e8e5dc;
+    --accent:#b8531a;
+    --accent-deep:#8a3d10;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:"Source Serif 4","Charter",Georgia,serif;line-height:1.7;font-size:19px;-webkit-font-smoothing:antialiased;font-feature-settings:"liga","kern","onum"}
+*:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+
+.pub-header{padding:36px 24px 24px;border-bottom:1px solid var(--rule);text-align:center}
+.pub-mark{display:inline-block;font-family:"Source Serif 4",serif;font-style:italic;font-weight:500;color:var(--ink);text-decoration:none;font-size:14px;letter-spacing:0.08em;text-transform:uppercase}
+.pub-mark::before{content:"— "}
+.pub-mark::after{content:" —"}
+
+.essay-meta{text-align:center;margin:36px 0 24px;font-family:"Inter",sans-serif;font-size:12px;color:var(--muted);letter-spacing:0.18em;text-transform:uppercase;font-weight:600}
+.essay-meta .dot{margin:0 8px;color:var(--rule)}
+
+.essay-wrap{max-width:640px;margin:0 auto;padding:0 24px 96px}
+
+article.essay h1{font-family:"Source Serif 4",serif;font-size:46px;line-height:1.12;font-weight:700;letter-spacing:-0.025em;margin:0 auto 14px;text-align:center;text-wrap:balance;color:var(--ink)}
+article.essay .subtitle{font-family:"Source Serif 4",serif;font-style:italic;font-weight:400;font-size:21px;line-height:1.4;color:var(--ink-soft);text-align:center;margin:0 auto 32px;max-width:540px}
+article.essay .byline{display:flex;align-items:center;justify-content:center;gap:14px;margin:0 0 48px;padding:18px 0;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);font-family:"Inter",sans-serif;font-size:14px;color:var(--muted)}
+article.essay .byline strong{color:var(--ink);font-weight:600}
+article.essay .byline a{color:var(--accent);text-decoration:none;border-bottom:1px solid var(--rule)}
+article.essay .byline a:hover{border-bottom-color:var(--accent)}
+article.essay .av{width:42px;height:42px;border-radius:50%;background:var(--ink);color:var(--paper);display:grid;place-items:center;font-weight:600;font-family:"Source Serif 4",serif;font-size:18px}
+
+article.essay p{margin:0 0 22px;text-align:left}
+article.essay p.lede{font-size:22px;line-height:1.5;margin:0 0 28px}
+article.essay p:not(.lede):first-of-type::first-letter{font-family:"Source Serif 4",serif;font-size:4.2em;float:left;line-height:0.78;padding:8px 10px 0 0;font-weight:700;color:var(--accent)}
+article.essay a{color:var(--accent);text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1px}
+article.essay a:hover{color:var(--accent-deep);text-decoration-thickness:2px}
+article.essay em{font-style:italic}
+article.essay strong{font-weight:600;color:var(--ink)}
+
+article.essay h2{font-family:"Source Serif 4",serif;font-size:28px;font-weight:700;letter-spacing:-0.015em;line-height:1.25;margin:56px 0 18px;color:var(--ink)}
+article.essay h2::before{content:"§ ";color:var(--accent);font-weight:400}
+
+article.essay .pull{display:block;font-family:"Source Serif 4",serif;font-style:italic;font-weight:500;font-size:24px;line-height:1.4;color:var(--ink);text-align:center;margin:48px auto;max-width:540px;padding:32px 0;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);position:relative}
+article.essay .pull::before,article.essay .pull::after{content:'';position:absolute;left:50%;transform:translateX(-50%);width:24px;height:1px;background:var(--accent)}
+article.essay .pull::before{top:-1px}
+article.essay .pull::after{bottom:-1px}
+
+article.essay .footnote-marker{font-size:0.75em;vertical-align:super;line-height:0;text-decoration:none;color:var(--accent);font-weight:600;font-family:"Inter",sans-serif;padding-left:2px}
+article.essay .footnote-marker::before{content:"["}
+article.essay .footnote-marker::after{content:"]"}
+
+article.essay .hr{border:none;text-align:center;margin:48px 0;color:var(--muted);font-size:18px;letter-spacing:1em;font-family:"Source Serif 4",serif}
+article.essay .hr::before{content:"• • •"}
+
+.footnotes{margin:96px auto 0;max-width:640px;padding:32px 24px 0;border-top:1px solid var(--rule);font-family:"Source Serif 4",serif;font-size:15px;line-height:1.6;color:var(--muted)}
+.footnotes h3{font-family:"Inter",sans-serif;font-size:11px;text-transform:uppercase;letter-spacing:0.14em;color:var(--muted);font-weight:700;margin:0 0 14px}
+.footnotes ol{margin:0;padding-left:24px}
+.footnotes ol li{margin:0 0 10px}
+.footnotes a{color:var(--accent);text-decoration:none;border-bottom:1px solid var(--rule)}
+
+.maintained{margin:64px 0 0;padding:24px 0;border-top:1px solid var(--rule);font-size:14px;color:var(--muted);font-family:"Inter",sans-serif;text-align:center}
+.maintained a{color:var(--ink-soft);font-weight:600;text-decoration:none;border-bottom:1px solid var(--rule)}
+.maintained a:hover{color:var(--accent);border-bottom-color:var(--accent)}
+
+footer{padding:32px 24px;border-top:1px solid var(--rule);margin-top:48px;background:var(--paper)}
+.foot-inner{max-width:640px;margin:0 auto;text-align:center;font-size:13px;color:var(--muted);font-family:"Inter",sans-serif}
+.foot-inner a{color:var(--ink-soft);text-decoration:none;margin:0 10px}
+.foot-inner a:hover{color:var(--accent)}
+.foot-inner div+div{margin-top:8px}
+
+@media(max-width:640px){
+    article.essay h1{font-size:32px}
+    article.essay .subtitle{font-size:18px}
+    article.essay p.lede{font-size:19px}
+    article.essay p{font-size:18px}
+    body{font-size:18px}
+}
+    </style>
+    <style>
+main.article{max-width:760px;margin:0 auto;padding:48px 24px 64px;font-family:"Inter",system-ui,sans-serif;line-height:1.7;font-size:17px;color:#1a1a17}
+main.article a:not(.brand):not(.brand-mark):not(.pub-name):not(.brand-tag){color:#b8531a;text-decoration:underline;text-underline-offset:3px}
+main.article .kicker{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:0.18em;color:#b8531a;margin:0 0 14px;font-family:"Inter",sans-serif;display:block}
+main.article h1{font-size:38px;line-height:1.1;font-weight:700;letter-spacing:-0.02em;margin:0 0 14px;text-wrap:balance;color:#0e0f1e}
+main.article .dek{font-size:20px;line-height:1.45;font-style:italic;margin:0 0 28px;color:#3d352a}
+main.article .byline{display:flex;gap:14px;align-items:center;border-top:1px solid rgba(0,0,0,0.1);border-bottom:1px solid rgba(0,0,0,0.1);padding:14px 0;font-size:14px;margin:0 0 32px;color:#555}
+main.article .byline .av{width:42px;height:42px;border-radius:50%;background:#b8531a;color:#fff;display:grid;place-items:center;font-weight:700;font-family:"Inter",sans-serif;flex-shrink:0;font-size:17px}
+main.article h2{font-size:26px;font-weight:700;margin:48px 0 14px;letter-spacing:-0.01em;color:#0e0f1e;line-height:1.25}
+main.article h2::before{content:""}
+main.article h3{font-size:19px;font-weight:700;margin:28px 0 8px;color:#0e0f1e;line-height:1.3}
+main.article p{margin:0 0 18px;text-align:left}
+main.article .lede{font-size:21px;line-height:1.5;margin:0 0 28px;color:#2d2c28}
+main.article ul,main.article ol{margin:0 0 18px;padding-left:24px}
+main.article li{margin:0 0 6px}
+main.article strong{font-weight:700;color:#0e0f1e}
+main.article em{font-style:italic}
+main.article .callout{background:rgba(0,0,0,0.035);border-left:3px solid #b8531a;padding:18px 22px;margin:24px 0;font-size:15px;line-height:1.6;border-radius:0 4px 4px 0}
+main.article .callout-label{display:block;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.12em;color:#b8531a;margin-bottom:6px;font-family:"Inter",sans-serif}
+main.article dl.glossary{margin:24px 0;display:grid;grid-template-columns:1fr;gap:0}
+main.article dl.glossary dt{font-weight:700;font-size:18px;color:#0e0f1e;padding:16px 0 4px;border-top:1px solid rgba(0,0,0,0.08);font-family:"Inter",sans-serif;display:flex;align-items:baseline;gap:10px}
+main.article dl.glossary dt:first-child{border-top:none;padding-top:0}
+main.article dl.glossary dt .abbr{font-size:12px;color:#b8531a;text-transform:uppercase;letter-spacing:0.08em;font-weight:600;font-family:"JetBrains Mono",monospace}
+main.article dl.glossary dd{margin:0 0 16px 0;font-size:15px;line-height:1.65;color:#2d2c28}
+main.article dl.glossary dd a{color:#b8531a;font-weight:600}
+main.article .faq-item{border-top:1px solid rgba(0,0,0,0.1);padding:20px 0}
+main.article .faq-item:last-child{border-bottom:1px solid rgba(0,0,0,0.1);margin-bottom:24px}
+main.article .faq-q{font-weight:700;font-size:18px;margin:0 0 10px;color:#0e0f1e}
+main.article .faq-a{font-size:15px;line-height:1.65;color:#3d352a}
+main.article .faq-a p{margin:0 0 12px}
+main.article .faq-a p:last-child{margin-bottom:0}
+main.article .step{display:flex;gap:16px;padding:14px 0;border-top:1px solid rgba(0,0,0,0.08)}
+main.article .step:first-of-type{border-top:none}
+main.article .step .step-num{flex-shrink:0;width:32px;height:32px;border-radius:50%;background:#b8531a;color:#fff;display:grid;place-items:center;font-weight:700;font-family:"JetBrains Mono",monospace;font-size:14px}
+main.article .step .step-body h3{margin:4px 0 6px;font-size:18px}
+main.article .step .step-body p{margin:0;font-size:15px;line-height:1.6;color:#3d352a}
+main.article .toc{background:rgba(0,0,0,0.03);padding:18px 24px;border-radius:4px;margin:0 0 32px;font-family:"Inter",sans-serif;font-size:14px}
+main.article .toc-title{font-size:11px;text-transform:uppercase;letter-spacing:0.14em;color:#b8531a;font-weight:700;margin:0 0 10px}
+main.article .toc ol{margin:0;padding-left:24px}
+main.article .toc a{color:#3d352a;text-decoration:none}
+main.article .toc a:hover{color:#b8531a;text-decoration:underline}
+.related-pages{max-width:760px;margin:0 auto;padding:32px 24px 64px;border-top:1px solid rgba(0,0,0,0.1)}
+.related-pages h4{font-size:11px;text-transform:uppercase;letter-spacing:0.14em;color:#b8531a;font-weight:700;margin:0 0 14px;font-family:"Inter",sans-serif}
+.related-pages-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:10px;font-family:"Inter",sans-serif}
+.related-pages a{color:#1a1a17;text-decoration:none;font-size:14px;padding:8px 12px;background:rgba(0,0,0,0.03);border-radius:4px;border-left:2px solid transparent;transition:all 140ms ease}
+.related-pages a:hover{border-left-color:#b8531a;color:#b8531a;background:rgba(0,0,0,0.05)}
+@media(max-width:640px){main.article h1{font-size:28px}main.article{padding:32px 16px 48px}}
+</style>
+</head>
+<body>
+
+<header class="pub-header">
+    <a href="/" class="pub-mark">The PPC Tools</a>
+</header>
+
+<main class="article">
+
+<p class="kicker">Glossary</p>
+<h1>The PPC glossary, with the operator&rsquo;s definitions</h1>
+<p class="dek">Forty-four terms that come up daily in paid-media work, defined the way an agency operator would explain them on a call &mdash; not the way the platform documentation does.</p>
+
+<div class="byline">
+    <div class="av">S</div>
+    <div>
+        <strong>Simran Khetwani</strong><br>
+        <span style="opacity:0.75">Maintained quarterly &middot; <a href="https://www.linkedin.com/in/simran-khetwani-a10274229/" target="_blank" rel="noopener">LinkedIn</a></span>
+    </div>
+</div>
+
+<p class="lede">The platforms (Google Ads, Microsoft Ads, Meta Ads) document these terms in ways that are technically correct and operationally useless. The definitions below assume you have an account in front of you and want to know what these things mean for your actual work.</p>
+
+<div class="toc">
+    <div class="toc-title">Sections</div>
+    <ol>
+        <li><a href="#metrics">Metrics &amp; KPIs</a></li>
+        <li><a href="#bidding">Bidding &amp; auction</a></li>
+        <li><a href="#attribution">Attribution &amp; tracking</a></li>
+        <li><a href="#campaign-types">Campaign types</a></li>
+        <li><a href="#audiences">Audiences &amp; targeting</a></li>
+        <li><a href="#optimization">Optimization &amp; structure</a></li>
+    </ol>
+</div>
+
+<h2 id="metrics">Metrics &amp; KPIs</h2>
+
+<dl class="glossary">
+    <dt>ROAS <span class="abbr">return on ad spend</span></dt>
+    <dd>Revenue divided by ad spend. The headline metric on most paid-search dashboards. Misleading by default because it usually excludes cost-of-goods, returns, and payment processing &mdash; meaning a campaign with a &ldquo;positive&rdquo; ROAS may be unprofitable in unit-economic terms. See also: True ROAS, Break-even ROAS.</dd>
+
+    <dt>True ROAS / Contribution-margin ROAS</dt>
+    <dd>(Net revenue &times; Gross margin &minus; Variable costs) &divide; Ad spend. The number that maps to actual profit. For most ecommerce, this is 30&ndash;60% lower than reported ROAS. The <a href="https://roascalculatorapp.com/">True ROAS Calculator</a> exposes the gap.</dd>
+
+    <dt>Break-even ROAS</dt>
+    <dd>1 &divide; Gross margin. The ROAS at which an account exactly breaks even. At 30% gross margin, break-even is ~3.33x. Operating below break-even loses money even before considering returns and processing fees.</dd>
+
+    <dt>CPC <span class="abbr">cost per click</span></dt>
+    <dd>What you pay for one click. Reported as the average across an ad group, campaign, or account. Misleading at the aggregate level because branded clicks (cheap, high-converting) lower the average and mask non-branded CPCs (expensive, lower-converting).</dd>
+
+    <dt>Max CPC</dt>
+    <dd>The highest profitable bid you can place. Derived from unit economics, not observed in the platform. The <a href="https://cpccalculatorhub.com/">Max CPC calculator</a> derives it from deal value, margin, LTV:CAC ratio, and funnel conversion rates.</dd>
+
+    <dt>CPL <span class="abbr">cost per lead</span></dt>
+    <dd>What you pay to acquire one lead (form fill, demo request, signup). Useful for B2B; meaningless for ecom. The relevant lead-quality threshold is sales-qualified leads (SQLs), not raw form fills.</dd>
+
+    <dt>CPA <span class="abbr">cost per acquisition</span></dt>
+    <dd>What you pay to acquire one customer (closed-won, paid order, completed signup). The right metric for most accounts. Often confused with CPL, which is upstream of CPA in the funnel.</dd>
+
+    <dt>CAC <span class="abbr">customer acquisition cost</span></dt>
+    <dd>All-in cost to acquire a customer &mdash; not just ad spend but also sales, marketing operations, and tooling. Typically used in finance contexts where the operating-cost framing matters.</dd>
+
+    <dt>LTV <span class="abbr">lifetime value</span></dt>
+    <dd>Total revenue a customer generates over their relationship with the business. For subscription products, includes recurring revenue. For one-off purchases, often a single transaction. LTV:CAC ratio of 3:1 is the SaaS rule of thumb.</dd>
+
+    <dt>CTR <span class="abbr">click-through rate</span></dt>
+    <dd>Clicks divided by impressions. A signal of ad relevance and offer quality. Higher CTR doesn&rsquo;t always mean better &mdash; cheaper clicks from less-qualified audiences can inflate CTR while degrading downstream performance.</dd>
+
+    <dt>Conversion rate</dt>
+    <dd>Conversions divided by clicks (or impressions, depending on the metric). The percentage of clicks that result in the tracked conversion event. Healthy ecom CVRs run 1.5&ndash;3.5%; B2B SaaS demo-request CVRs run 3&ndash;8%.</dd>
+
+    <dt>Quality Score</dt>
+    <dd>Google&rsquo;s 1&ndash;10 score for ad relevance, landing page experience, and expected CTR. Influences ad rank and CPC. Increasingly opaque (not exposed for Performance Max campaigns), but still a useful diagnostic for traditional Search campaigns.</dd>
+</dl>
+
+<h2 id="bidding">Bidding &amp; auction</h2>
+
+<dl class="glossary">
+    <dt>Smart Bidding</dt>
+    <dd>Google&rsquo;s native automated bidding strategies (Target ROAS, Target CPA, Maximize Conversions, etc.). Uses Google&rsquo;s portfolio-trained ML across millions of accounts. Generally outperforms manual bidding above ~$10K/mo in spend; below that, the model doesn&rsquo;t have enough account-level data to train meaningfully.</dd>
+
+    <dt>Manual CPC</dt>
+    <dd>The legacy non-automated bidding mode. Operator sets bids by hand. Almost never the right choice in 2026 except for tightly controlled brand-defense campaigns.</dd>
+
+    <dt>Target ROAS (tROAS)</dt>
+    <dd>Smart Bidding strategy that targets a specific revenue-to-spend ratio. Set the target slightly above break-even ROAS; Google&rsquo;s model will adjust bids to hit it on average. Requires conversion-value tracking installed correctly.</dd>
+
+    <dt>Target CPA (tCPA)</dt>
+    <dd>Smart Bidding strategy that targets a specific cost per conversion. Right for lead-gen accounts where conversion value isn&rsquo;t tracked. Avoid for ecom where revenue varies materially per conversion.</dd>
+
+    <dt>Maximize Conversions</dt>
+    <dd>Smart Bidding strategy that spends the budget aiming for the most conversions, without a target CPA. Useful for budget-constrained accounts trying to learn the cost curve. Risky because no ceiling on what the model will pay per conversion.</dd>
+
+    <dt>Bid adjustment</dt>
+    <dd>Percentage modifier on the base bid for specific contexts (device, location, time of day, audience). E.g., &ldquo;+20% on mobile&rdquo; multiplies the base bid by 1.2 for mobile clicks. Largely deprecated under Smart Bidding, which handles these signals internally.</dd>
+
+    <dt>Auction</dt>
+    <dd>Real-time process Google runs for every search query to decide which ads to show and in what order. Inputs: advertiser&rsquo;s bid, Quality Score, ad rank thresholds. Lasts roughly 100ms per query. Happens billions of times daily.</dd>
+
+    <dt>Ad rank</dt>
+    <dd>The score that determines an ad&rsquo;s position in the auction. Roughly: Bid &times; Quality Score &times; expected impact of ad extensions. Higher ad rank = better position.</dd>
+</dl>
+
+<h2 id="attribution">Attribution &amp; tracking</h2>
+
+<dl class="glossary">
+    <dt>Last-click attribution</dt>
+    <dd>Gives 100% of conversion credit to the final touchpoint before conversion. The default for most ad platforms. Systematically biased against top-of-funnel campaigns. For B2B with multi-touch journeys, materially understates paid-media contribution.</dd>
+
+    <dt>Data-driven attribution (DDA)</dt>
+    <dd>Google&rsquo;s ML-based attribution model. Distributes credit across touchpoints based on patterns in your conversion data. Requires ~600+ conversions over 30 days to qualify (threshold reduced from 3,000 in early 2026). Recommended for most accounts that qualify.</dd>
+
+    <dt>Multi-touch attribution (MTA)</dt>
+    <dd>Any model that distributes credit across multiple touchpoints rather than just the last. Includes linear, U-shaped, time-decay, and data-driven. The <a href="https://myroascalculator.com/">attribution simulator</a> shows how each model carves up the same conversion differently.</dd>
+
+    <dt>GCLID</dt>
+    <dd>Google Click ID. Unique identifier appended to every click&rsquo;s landing-page URL when the auto-tagging is on. Captured in your CRM, it lets you import offline conversion events back to Google Ads with the original click attached. Essential for B2B accounts where leads close offline.</dd>
+
+    <dt>Offline conversion import</dt>
+    <dd>Pushing back into Google Ads which leads became customers. Closes the attribution loop for B2B and services. Most-undervalued setup work for accounts whose conversion event isn&rsquo;t same-session.</dd>
+
+    <dt>Enhanced Conversions</dt>
+    <dd>Google&rsquo;s privacy-aware conversion-tracking enhancement. Hashes first-party customer data and sends it server-side. Required for conversion-value rules in Smart Bidding. Worth installing on every account.</dd>
+
+    <dt>Conversion-value rules</dt>
+    <dd>Smart Bidding feature that lets you weight conversions by audience attribute (new vs. returning, geography, device). The closest Google has come to margin-aware native bidding. Easy to misconfigure.</dd>
+</dl>
+
+<h2 id="campaign-types">Campaign types</h2>
+
+<dl class="glossary">
+    <dt>Performance Max (PMax)</dt>
+    <dd>Google&rsquo;s automated, multi-inventory campaign type. Combines Search, Shopping, Display, YouTube, Discover, and Gmail placements in one ML-driven campaign. Substantially improved through 2025. Default choice for ecom in 2026; situational for B2B.</dd>
+
+    <dt>Standard Shopping</dt>
+    <dd>The traditional Shopping campaign type, predating Performance Max. Largely replaced by PMax but still useful for accounts that need granular bid control or for testing against PMax baselines.</dd>
+
+    <dt>Demand Gen</dt>
+    <dd>Replaced Discovery in 2026. YouTube + Gmail + Discover feed placements. Useful for upper-funnel ecom and brand awareness. Often dilutes lead quality if used for B2B without careful audience configuration.</dd>
+
+    <dt>Search</dt>
+    <dd>The traditional keyword-targeted text-ad campaign type. Most predictable, most controllable. Still the default for B2B and high-intent verticals.</dd>
+
+    <dt>Display</dt>
+    <dd>Image and responsive display ads on Google&rsquo;s display network (websites, apps). Generally low-intent. Used for retargeting and brand awareness. Easy to waste budget on if not carefully constrained.</dd>
+
+    <dt>YouTube</dt>
+    <dd>Video advertising on YouTube. Effective for brand awareness, video-first products, and audiences that don&rsquo;t respond to text search ads. Conversion attribution is messier than Search.</dd>
+
+    <dt>Local Services Ads (LSAs)</dt>
+    <dd>Pay-per-lead format with the Google Guarantee badge for local services. Distinct from regular Google Ads. Higher conversion rates than standard Search for high-intent local queries. Required for most home-services and professional-services advertisers.</dd>
+</dl>
+
+<h2 id="audiences">Audiences &amp; targeting</h2>
+
+<dl class="glossary">
+    <dt>Customer Match</dt>
+    <dd>Targeting based on uploaded first-party customer data (email lists, phone numbers). Hashed for privacy. Useful for retargeting customers, building lookalikes, and excluding existing customers from acquisition campaigns.</dd>
+
+    <dt>Similar audiences / Optimized targeting</dt>
+    <dd>Google&rsquo;s lookalike targeting. Builds audiences resembling your conversion list or customer list. Increasingly handled inside Performance Max&rsquo;s audience signals rather than as a standalone targeting layer.</dd>
+
+    <dt>Audience signals</dt>
+    <dd>The inputs to Performance Max&rsquo;s ML targeting. First-party audience lists, custom intent audiences, demographics, in-market segments. PMax uses these as starting points for the model, not strict targeting constraints.</dd>
+
+    <dt>Negative keywords</dt>
+    <dd>Keywords for which your ad should NOT appear. Critical for Search campaigns; less relevant for PMax. The ongoing maintenance of negative keyword lists is one of the highest-ROI activities on a search account.</dd>
+
+    <dt>Match types</dt>
+    <dd>The breadth of how Google interprets your keyword: broad (loose), phrase (moderate), exact (tight). Broad match has expanded significantly under Smart Bidding and is now the default recommendation for most accounts &mdash; a major shift from a few years ago.</dd>
+
+    <dt>Search term</dt>
+    <dd>The actual query a user typed that triggered your ad. Visible in the search-terms report. The basis for negative-keyword decisions and for spotting bid-up opportunities.</dd>
+
+    <dt>N-gram analysis</dt>
+    <dd>Decomposing search terms into 1-, 2-, or 3-word chunks to identify patterns. Useful for finding negative keywords at scale or spotting underserved query patterns. <a href="/tools/optmyzr/">Optmyzr</a> is the most polished tool for n-gram work.</dd>
+</dl>
+
+<h2 id="optimization">Optimization &amp; structure</h2>
+
+<dl class="glossary">
+    <dt>Account structure</dt>
+    <dd>How an advertiser organizes their account into campaigns and ad groups. Best practice has evolved away from hyper-granular structures (one ad group per keyword) toward consolidated structures that give Smart Bidding more data to train on.</dd>
+
+    <dt>Ad group</dt>
+    <dd>A grouping of related keywords with shared ads. The unit of bid-strategy management in pre-Smart-Bidding accounts; less relevant in PMax-dominant accounts.</dd>
+
+    <dt>Asset groups</dt>
+    <dd>The Performance Max equivalent of ad groups. Bundles of creative assets (headlines, descriptions, images, videos) plus audience signals that PMax uses to target.</dd>
+
+    <dt>Budget pacing</dt>
+    <dd>How the platform spends your daily budget over the day. Can be standard (even throughout the day) or accelerated (front-loaded). Most accounts should use standard pacing.</dd>
+
+    <dt>Daypart / Ad scheduling</dt>
+    <dd>Restricting ads to specific hours/days. Largely deprecated under Smart Bidding, which handles time-based optimization internally. Still relevant for accounts with operational constraints (e.g., a call center that&rsquo;s closed nights).</dd>
+
+    <dt>Final URL expansion</dt>
+    <dd>PMax feature that lets Google&rsquo;s ML send traffic to any URL on your domain, not just the ones you specify. Useful for ecom inventory with many product pages; dangerous for sites with significant non-commercial content.</dd>
+
+    <dt>Brand exclusion list</dt>
+    <dd>Negative-keyword list at the PMax campaign level that prevents the campaign from spending on your own brand terms. Should be on for almost every PMax campaign. Default was opt-in until early 2026; now default is opt-out (a meaningful UX improvement).</dd>
+
+    <dt>Conversion-event taxonomy</dt>
+    <dd>The set of conversion events you&rsquo;ve defined and how they&rsquo;re weighted. Often broken on accounts that have run for years &mdash; legacy events that no longer reflect business value, duplicate events firing twice, missing offline events. Auditing the taxonomy is the single highest-leverage hour an operator can spend on a new account.</dd>
+</dl>
+
+</main>
+
+<div class="related-pages">
+    <h4>Related on this site</h4>
+    <div class="related-pages-grid">
+        <a href="/">Home</a>
+        <a href="/about/">About</a>
+        <a href="/methodology/">Methodology</a>
+        <a href="/contact/">Contact</a>
+        <a href="/glossary/">Glossary</a>
+        <a href="/faq/">FAQ</a>
+        <a href="/guide/">Field guide</a>
+        <a href="/tools/groas/">Groas.ai review</a>
+    </div>
+</div>
+
+<footer>
+    <div class="foot-inner">
+        <div>The PPC Tools &middot; an annual letter</div>
+        <div>
+            <a href="/tools/">Tool reviews</a>
+            <a href="/about/">About Simran</a>
+            <a href="/contact/">Contact</a>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

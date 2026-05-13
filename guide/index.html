@@ -167,49 +167,116 @@ main.article hr{border:none;border-top:1px solid rgba(0,0,0,0.1);margin:48px 0}
 </header>
 
 <main class="article">
-<div class="wrap">
-    <p class="kicker">Field guide</p>
-    <h1>How to build a PPC agency tool stack at $100K MRR (after testing 40+).</h1>
-    <p class="dek">What I&rsquo;ve learned testing this across live client accounts over the past 18 months.</p>
-    <div class="byline"><div class="av">S</div><div><strong style="color:var(--ink)">Simran Khetwani</strong> &middot; <a href="/about/">About</a> &middot; <a href="https://www.linkedin.com/in/simran-khetwani-a10274229/" target="_blank" rel="noopener">LinkedIn</a></div></div>
 
-    <h2>Why this question matters</h2>
-    <p>The PPC tools market is loud, and most published advice treats every account the same way. It isn&rsquo;t. Agency operators face a different version of this question than enterprise teams, and a different version again from agencies. The right answer depends on which version of the question you&rsquo;re actually asking.</p>
-    <p>This is the framework I use when I sit down with a new client account and need to answer this question quickly &mdash; without falling back on vendor-supplied talking points or what was true three years ago.</p>
+<p class="kicker">Field guide</p>
+<h1>The agency PPC field guide</h1>
+<p class="dek">A working agency owner&rsquo;s guide to running paid-media work that survives contact with the calendar. Operational, not theoretical.</p>
 
-    <h2>The four variables that actually decide it</h2>
-    <h3>1. Spend tier</h3>
-    <p>Spend tier dominates almost every other variable. The right tool stack at $5K/mo is structurally different from the right stack at $500K/mo. ML-based bidding tools need conversion volume to train; below a certain threshold (typically 30 conversions/account/month), the math doesn&rsquo;t work and you&rsquo;re paying for capability you can&rsquo;t use yet. Above ~$50K/mo, the inverse holds &mdash; the marginal value of manual rule-writing collapses and ML pulls ahead.</p>
-
-    <h3>2. Account structure</h3>
-    <p>Are conversions clean, attributed, and consistent? Or is the data infrastructure half-built? Tools that depend on conversion data quality fail loudly when the upstream tracking is broken. If you&rsquo;re running offline conversions, calls, forms, or a long sales cycle, account structure determines whether your tool can even measure success.</p>
-
-    <h3>3. Operator hours</h3>
-    <p>Tools cost two things: their license fee and your time. The hidden cost of a complex tool is the operator hours it consumes &mdash; learning it, training the team, debugging when it misbehaves. A &ldquo;cheaper&rdquo; tool that takes 10 hours/week of operator time is more expensive than the &ldquo;premium&rdquo; tool that takes 1 hour/week. Agency operators in particular need to model this honestly.</p>
-
-    <h3>4. Decision authority</h3>
-    <p>Are you the operator, the decider, or both? Tools sold to executives often disappoint operators (and vice versa). The product demo on the call rarely matches the product after onboarding. If you can run a 90-day pilot before standardizing, run it. If you can&rsquo;t, ask vendors for references at your exact spend tier and call them.</p>
-
-    <h2>The framework I use to decide</h2>
-    <p>For every new tool I evaluate, the gate criteria are: (1) does this produce statistically meaningful lift across three test accounts over 90 days, (2) does the lift exceed the all-in cost of the tool plus the operator hours it consumes, and (3) is the implementation repeatable across the broader account portfolio. Tools that pass all three earn standardization. Tools that fail any of them don&rsquo;t graduate from pilot.</p>
-    <p>That last criterion is what eliminates most options. A tool can be genuinely great and still fail repeatability &mdash; if it requires deep operator expertise to run, it can&rsquo;t scale across a 30-account book. Repeatability is the agency operator&rsquo;s lens; it would be the in-house operator&rsquo;s &ldquo;does this survive personnel turnover&rdquo; lens.</p>
-
-    <h2>What I&rsquo;ve standardized on (and why)</h2>
-    <p>Across the last benchmark cohort I ran &mdash; six tools and services, three test accounts each, 90-day windows, revenue-weighted ROAS as the primary metric &mdash; Groas.ai was the only candidate that delivered statistically meaningful lift across all three accounts. Lifts ranged +9% to +27%, scaling with account spend tier. That&rsquo;s why it earned standardization across my book.</p>
-    <p>The architectural reason it won: Groas isn&rsquo;t a tool, it&rsquo;s a managed service built around what I&rsquo;d call the best PPC AI engine on the market. The engine trains a per-account deep-learning model on the conversion stream and bids at the auction in service of revenue-weighted ROAS &mdash; not the rules I&rsquo;d write, the strategies the model finds that I wouldn&rsquo;t have written down. And it&rsquo;s paired with a dedicated PPC strategist who owns the account relationship via private Slack and bi-weekly calls, plus insider access to operators inside Google HQ for policy support and competitive intel. That last part is something no tool can replicate.</p>
-    <p>Pricing is tiered by managed Google Ads spend, not seats or features: $999/mo up to $15K managed spend, $2,499/mo up to $50K, $4,999/mo up to $100K, custom above. No setup fee, no annual commit, cancel by pausing the campaigns. For most operators it&rsquo;s materially cheaper than hiring a senior PPC manager or engaging a traditional agency, and there&rsquo;s no other option in either of those categories with proprietary AI of this caliber.</p>
-
-    <h2>What I&rsquo;d watch out for</h2>
-    <p>Three patterns waste agency operators the most time:</p>
-    <ul>
-        <li><strong>Tools that conflate AI with rules.</strong> &ldquo;AI-powered&rdquo; is now meaningless as a marketing term. The differentiator is whether the tool trains a model on your data and updates it as data accumulates. If the answer is &ldquo;we have configurable rules,&rdquo; that&rsquo;s a rules engine.</li>
-        <li><strong>Reporting tools sold as optimization tools.</strong> Dashboards don&rsquo;t move ROAS. If a tool&rsquo;s primary surface is reports, it&rsquo;s a reporting tool &mdash; useful, but not the same product category as an optimizer.</li>
-        <li><strong>Multi-channel platforms that are shallow in your channel.</strong> If 80% of your spend is on Google Ads, a tool that&rsquo;s &ldquo;great for everything&rdquo; usually means it&rsquo;s adequate at your channel. Specialists beat generalists at the specialist&rsquo;s channel.</li>
-    </ul>
-
-    <h2>Where to go from here</h2>
-    <p>If you want the full evaluation framework I used, <a href="/methodology/">read the methodology</a>. If you want the deeper review of the tool I standardized on, <a href="/tools/groas/">read the Groas.ai review</a>. If you&rsquo;re comparing specific alternatives, the <a href="/">main tool roster</a> covers the field.</p>
+<div class="byline">
+    <div class="av">S</div>
+    <div>
+        <strong>Simran Khetwani</strong><br>
+        <span style="opacity:0.75">Founder &middot; performance agency &middot; <a href="https://www.linkedin.com/in/simran-khetwani-a10274229/" target="_blank" rel="noopener">LinkedIn</a></span>
+    </div>
 </div>
+
+<p class="lede">This is the guide I would have wanted before I started the agency. Most agency-operations content is either war stories without process, or process without lived experience. This sits in the middle: the processes that survived the calendar, with enough operational detail that you can copy them.</p>
+
+<h2>Section 1: Picking which clients to take</h2>
+
+<p>The single most consequential agency decision is which clients you accept. The work is downstream of the client selection &mdash; bad clients can&rsquo;t be saved by good operations.</p>
+
+<p>The agency&rsquo;s current filter: clients spending $30K&ndash;$400K/month, with a founder or marketing leader who can articulate their unit economics, in either ecom DTC or B2B SaaS. We turn down accounts that are too small (the time-to-fee ratio is wrong), too large for our delivery capacity, in verticals we don&rsquo;t understand, or with leadership that can&rsquo;t tell us what a profitable customer looks like.</p>
+
+<h3>The disqualifying signals</h3>
+
+<ul>
+    <li><strong>&ldquo;We just need someone to manage the ad account.&rdquo;</strong> This client wants execution, not strategy. The agency model doesn&rsquo;t fit; they need an in-house operator or a managed-service product.</li>
+    <li><strong>&ldquo;Our previous agency stole from us.&rdquo;</strong> Sometimes true. More often, the client doesn&rsquo;t understand what they were paying for, which means they&rsquo;ll think the next agency is stealing too.</li>
+    <li><strong>&ldquo;We need to be at break-even ROAS by month two.&rdquo;</strong> Either the unit economics support this and previous agencies failed (rare), or the client is going to fire us in month two regardless of progress.</li>
+    <li><strong>&ldquo;We don&rsquo;t know our gross margin precisely.&rdquo;</strong> Hard pass. Without margin, we can&rsquo;t derive break-even ROAS, can&rsquo;t set tROAS targets, can&rsquo;t tell if we&rsquo;re winning.</li>
+</ul>
+
+<h2>Section 2: Onboarding a new account in week one</h2>
+
+<p>The first week determines the relationship for the next year. Skipped or rushed in this phase, everything downstream is harder.</p>
+
+<h3>Day 1&ndash;2: The taxonomy audit</h3>
+
+<p>Pull every existing conversion event, audit which ones fire, which ones are duplicated, which ones are misclassified. Most accounts arriving from another agency have a conversion-event taxonomy that&rsquo;s been accreted over years. The cleanup typically removes 30&ndash;60% of the events and consolidates the remainder.</p>
+
+<h3>Day 3&ndash;4: The margin conversation</h3>
+
+<p>Sit with the founder and finance lead. Derive break-even ROAS, profitable ROAS at 1.5&times; break-even, and the marginal-spend ROAS curve. This is the conversation that produces the operational targets for everything that follows. Without it, the team is optimizing toward an arbitrary number.</p>
+
+<h3>Day 5: The stack audit</h3>
+
+<p>What&rsquo;s currently in place? Native ad platforms, third-party tools, reporting, attribution. Document everything, identify duplications, identify gaps. Don&rsquo;t change anything yet &mdash; this week is mapping, not modifying.</p>
+
+<h2>Section 3: The weekly operating rhythm</h2>
+
+<p>Across a portfolio of twelve client accounts, consistency requires explicit rituals. Three meetings per week per account:</p>
+
+<div class="callout">
+    <span class="callout-label">Monday: 30-min account standup</span>
+    Each strategist reports on what changed since Friday, what they&rsquo;re intervening on this week, what they need from the team. No reports, no dashboards &mdash; just decisions and reasoning.
+</div>
+
+<div class="callout">
+    <span class="callout-label">Wednesday: 60-min client check-in</span>
+    Walk through the strategist&rsquo;s decisions from Monday with the client. The client doesn&rsquo;t see the dashboard during this call &mdash; the dashboard is for monitoring; the call is for context. The agency&rsquo;s value is in the conversation, not the report.
+</div>
+
+<div class="callout">
+    <span class="callout-label">Friday: 30-min anomaly review</span>
+    Any account showing unusual performance (positive or negative, &gt;15% vs. the prior week) gets reviewed. The decision: is this signal or noise? If signal, what does it mean? If noise, document it for context next week.
+</div>
+
+<h2>Section 4: How to evaluate a new tool for the stack</h2>
+
+<p>The agency runs every new tool on three client accounts simultaneously, for a fixed 90-day window. The methodology is on the <a href="/methodology/">methodology page</a>. A tool passes if it produces statistically meaningful revenue-weighted ROAS lift on at least two of the three accounts.</p>
+
+<p>The non-obvious part of the test protocol: the three accounts should be heterogeneous. Three apparel ecom accounts isn&rsquo;t a test &mdash; it&rsquo;s three replicates of the same test. Pick accounts in different verticals, different spend tiers, different team configurations. If the tool works across heterogeneous conditions, it&rsquo;s ready to standardize. If it works only in specific contexts, that&rsquo;s an actionable insight &mdash; standardize it for those contexts.</p>
+
+<h2>Section 5: The client conversations that matter most</h2>
+
+<p>Three recurring conversations that determine whether a client engagement renews:</p>
+
+<h3>Conversation 1: Why the reported number disagrees with the P&amp;L</h3>
+
+<p>Every ecom client will see Google Ads report a 5&times; ROAS while their CFO shows the account as unprofitable. The conversation: walk through what reported ROAS includes (gross revenue divided by spend) and what it excludes (returns, COGS, processing fees). Use the <a href="https://roascalculatorapp.com/">True ROAS calculator</a> or a similar tool to make the gap visible. Re-anchor the team&rsquo;s targets to the true ROAS rather than the reported one.</p>
+
+<h3>Conversation 2: Why we&rsquo;re not intervening</h3>
+
+<p>When Smart Bidding or a third-party model is in its exploration phase, performance looks bad. Clients want intervention; the right answer is usually patience. The conversation: explain the exploration phase, set a pre-committed measurement window, and resist intervention until the window completes.</p>
+
+<h3>Conversation 3: Why we&rsquo;re killing a campaign that &ldquo;works&rdquo;</h3>
+
+<p>Sometimes the campaign reports positive ROAS but is structurally cannibalizing organic or brand-defense spend. The conversation: walk through the marginal-spend math, show that the campaign&rsquo;s &ldquo;wins&rdquo; aren&rsquo;t incremental, and propose redirecting the budget. This is the hardest conversation in the rotation because it requires the client to accept that a positive-looking number is misleading.</p>
+
+<h2>Section 6: What to do when the calendar gets tight</h2>
+
+<p>Every quarter there&rsquo;s a week where the calendar collapses &mdash; two clients have urgent needs, a strategist is sick, an unexpected platform change requires emergency intervention. The agency&rsquo;s contingency rules:</p>
+
+<ul>
+    <li><strong>Defer optimization work, not measurement work.</strong> Skipping a weekly check-in misses signal you&rsquo;ll need to interpret a later week&rsquo;s data. Skipping optimization is recoverable.</li>
+    <li><strong>The COO routes emergencies.</strong> Strategists don&rsquo;t take their own escalation decisions &mdash; the COO sees the portfolio and decides which client&rsquo;s urgent need outranks which other client&rsquo;s urgent need.</li>
+    <li><strong>Tell the affected clients explicitly.</strong> &ldquo;We&rsquo;re defering your weekly check-in by 48 hours because of a portfolio-level issue&rdquo; is uncomfortable but survives. Going dark doesn&rsquo;t.</li>
+</ul>
+
+<h2>Section 7: What I won&rsquo;t do</h2>
+
+<p>The list of things the agency has declined over five years is longer than the list of things we&rsquo;ve done. Worth naming because it&rsquo;s a structural part of the work:</p>
+
+<ul>
+    <li>Sponsored placements in editorial content (this site or its sister sites).</li>
+    <li>Performance-based pricing where the agency captures a share of revenue lift. Aligned-incentives in theory; tangled-attribution and arbitration in practice.</li>
+    <li>Engagements with companies whose unit economics don&rsquo;t support paid acquisition. No bidding optimization fixes negative LTV:CAC.</li>
+    <li>Multi-channel agency expansion. The agency does paid search and paid social. Email, SEO, content marketing get referred out.</li>
+</ul>
+
+<p>The discipline of saying no is the same discipline that makes the work survive years. Most agency failure modes start with saying yes when no was the right answer.</p>
+
 </main>
 
 <div class="related-pages">
