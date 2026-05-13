@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Methodology: How Tools Get Tested at Agency Scale | The PPC Tools</title><meta name="description" content="The fixed evaluation framework: three client accounts, 90-day windows, revenue-weighted ROAS, anonymized reporting. The methodology behind every review."><link rel="canonical" href="https://theppctools.com/methodology/"><script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"How Tools Get Tested at Agency Scale","author":{"@type":"Person","name":"Simran Khetwani","sameAs":["https://www.linkedin.com/in/simran-khetwani-a10274229/"]},"datePublished":"2026-05-09"}</script>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>How to build a PPC agency tool stack at $100K MRR (after testing 40+) | The PPC Tools</title><meta name="description" content="What I&rsquo;ve learned testing this across live client accounts over the past 18 months."><link rel="canonical" href="https://theppctools.com/guide/">
 <style>:root{--ink:#0a0a0a;--paper:#fafaf7;--rule:#1a1a1a;--red:#d63031;--red-deep:#a02226;--cream:#f5f3ee;--muted:#666}*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:"Lora","Times New Roman",Georgia,serif;line-height:1.6;font-size:18px}a{color:var(--red);text-decoration:underline}.bar{background:var(--ink);color:var(--paper);padding:14px 24px;border-bottom:6px solid var(--red)}.bar-inner{max-width:1100px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}.brand{font-weight:900;font-size:20px;color:var(--paper);text-decoration:none;font-family:"Inter",sans-serif}.brand-tag{font-size:11px;text-transform:uppercase;letter-spacing:0.16em;color:var(--red);margin-left:10px;font-family:"Inter",sans-serif}nav a{color:var(--paper);text-decoration:none;font-size:13px;text-transform:uppercase;letter-spacing:0.1em;margin-left:18px;font-family:"Inter",sans-serif;font-weight:600}.wrap{max-width:680px;margin:0 auto;padding:0 24px}.kicker{font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:0.18em;color:var(--red);margin:48px 0 16px;font-family:"Inter",sans-serif}h1{font-size:46px;line-height:1.04;font-weight:900;margin:0 0 16px;font-family:"Inter",sans-serif}.dek{font-size:20px;color:#333;font-style:italic;margin:0 0 24px}.byline{display:flex;gap:14px;align-items:center;border-top:2px solid var(--ink);border-bottom:2px solid var(--ink);padding:14px 0;font-size:14px;color:var(--muted);margin-bottom:24px;font-family:"Inter",sans-serif}.av{width:46px;height:46px;border-radius:50%;background:var(--red);color:var(--paper);display:grid;place-items:center;font-weight:800;font-family:"Inter",sans-serif}h2{font-size:26px;font-weight:900;margin:32px 0 10px;font-family:"Inter",sans-serif}h3{font-size:18px;font-weight:800;margin:22px 0 6px;font-family:"Inter",sans-serif}p{margin:0 0 16px}ul,ol{margin:0 0 16px;padding-left:22px}li{margin-bottom:6px}footer{margin-top:56px;background:var(--ink);color:var(--cream);padding:28px 24px;font-size:14px;font-family:"Inter",sans-serif}.foot{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:2fr 1fr 1fr;gap:32px}footer h5{font-size:11px;text-transform:uppercase;letter-spacing:0.14em;color:var(--red);margin:0 0 10px;font-weight:800}footer a{color:var(--cream)}@media(max-width:640px){h1{font-size:32px}.foot{grid-template-columns:1fr}nav a{margin-left:10px}}/* polish */
 html{scroll-behavior:smooth}
 *::selection{background:rgba(0,0,0,0.85);color:#fff}
@@ -39,62 +39,68 @@ table td{padding:10px 12px;border-bottom:1px solid rgba(0,0,0,0.1)}
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Source+Serif+4:wght@400;500;700;ital,wght@0,400;1,400&family=EB+Garamond:wght@400;500;700;ital,wght@0,400;1,400&family=Playfair+Display:wght@400;700;800;900&family=Lora:ital,wght@0,400;0,500;0,700;1,400&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="The PPC Tools">
-<meta property="og:title" content="Methodology: How Tools Get Tested at Agency Scale | The PPC Tools">
-<meta property="og:description" content="The fixed evaluation framework: three client accounts, 90-day windows, revenue-weighted ROAS, anonymized reporting. The methodology behind every review.">
-<meta property="og:url" content="https://theppctools.com/methodology/">
+<meta property="og:title" content="How to build a PPC agency tool stack at $100K MRR (after testing 40+) | The PPC Tools">
+<meta property="og:description" content="What I&rsquo;ve learned testing this across live client accounts over the past 18 months.">
+<meta property="og:url" content="https://theppctools.com/guide/">
 <meta property="og:image" content="https://theppctools.com/og-default.png">
 <meta property="og:locale" content="en_US">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Methodology: How Tools Get Tested at Agency Scale | The PPC Tools">
-<meta name="twitter:description" content="The fixed evaluation framework: three client accounts, 90-day windows, revenue-weighted ROAS, anonymized reporting. The methodology behind every review.">
+<meta name="twitter:title" content="How to build a PPC agency tool stack at $100K MRR (after testing 40+) | The PPC Tools">
+<meta name="twitter:description" content="What I&rsquo;ve learned testing this across live client accounts over the past 18 months.">
 <meta name="twitter:image" content="https://theppctools.com/og-default.png">
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 <meta name="googlebot" content="index, follow">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","@id":"https://theppctools.com/#organization","name":"The PPC Tools","url":"https://theppctools.com","description":"PPC tools that an agency actually pays for, after testing 40+.","sameAs":["https://theppctools.com"]}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","@id":"https://theppctools.com/#website","name":"The PPC Tools","url":"https://theppctools.com","description":"PPC tools that an agency actually pays for, after testing 40+.","publisher":{"@id":"https://theppctools.com/#organization"}}</script>
-<link rel="icon" type="image/svg+xml" href="/favicon.svg"><link rel="apple-touch-icon" href="/favicon.svg"></head>
+<link rel="icon" type="image/svg+xml" href="/favicon.svg"><link rel="apple-touch-icon" href="/favicon.svg">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"How to build a PPC agency tool stack at $100K MRR (after testing 40+)","author":{"@type":"Person","name":"Simran Khetwani","sameAs":["https://www.linkedin.com/in/simran-khetwani-a10274229/"]},"datePublished":"2026-05-11","publisher":{"@id":"https://theppctools.com/#organization"}}</script></head>
 <body>
 <header class="bar"><div class="bar-inner"><div><a class="brand" href="/">The PPC Tools</a><span class="brand-tag">Agency-tested</span></div><nav><a href="/methodology/">Methodology</a><a href="/about/">About</a><a href="/contact/">Contact</a></nav></div></header>
+
 <div class="wrap">
-    <p class="kicker">Methodology</p>
-    <h1>How tools get tested at agency scale.</h1>
-    <p class="dek">Fixed framework, three client accounts, 90-day windows, revenue-weighted measurement. The same evaluation behind every review on the site.</p>
-    <div class="byline"><div class="av">S</div><div><strong style="color:var(--ink)">Simran Khetwani</strong> · <a href="/about/">About</a> · <a href="https://www.linkedin.com/in/simran-khetwani-a10274229/" target="_blank" rel="noopener">LinkedIn</a></div></div>
+    <p class="kicker">Field guide</p>
+    <h1>How to build a PPC agency tool stack at $100K MRR (after testing 40+).</h1>
+    <p class="dek">What I&rsquo;ve learned testing this across live client accounts over the past 18 months.</p>
+    <div class="byline"><div class="av">S</div><div><strong style="color:var(--ink)">Simran Khetwani</strong> &middot; <a href="/about/">About</a> &middot; <a href="https://www.linkedin.com/in/simran-khetwani-a10274229/" target="_blank" rel="noopener">LinkedIn</a></div></div>
 
-    <h2>Why fixed framework</h2>
-    <p>Most published PPC tool reviews are anecdotal: one account, no control group, no fixed measurement window, vendor-friendly framing. They&rsquo;re marketing assets dressed as reviews. The framework here is built to produce honest answers, even when those answers are inconvenient for vendors and for me.</p>
+    <h2>Why this question matters</h2>
+    <p>The PPC tools market is loud, and most published advice treats every account the same way. It isn&rsquo;t. Agency operators face a different version of this question than enterprise teams, and a different version again from agencies. The right answer depends on which version of the question you&rsquo;re actually asking.</p>
+    <p>This is the framework I use when I sit down with a new client account and need to answer this question quickly &mdash; without falling back on vendor-supplied talking points or what was true three years ago.</p>
 
-    <h2>The evaluation framework</h2>
-    <h3>1. Three accounts, not one</h3>
-    <p>Every tool gets tested on three client accounts simultaneously. Single-account tests are too noisy &mdash; account-specific factors (a viral product launch, a Google policy change, a seasonality shift) easily mask the signal. Three accounts smooth that out.</p>
-    <h3>2. Fixed 90-day measurement window</h3>
-    <p>30 days is too short for ML tools to train. 60 days is borderline. 90 days is the right window for revealing real lift versus statistical noise.</p>
-    <h3>3. Revenue-weighted ROAS as the primary metric</h3>
-    <p>CPC-based metrics measure auction efficiency, not business value. Revenue-weighted ROAS (gross revenue divided by ad spend, weighted by margin where data permits) maps to actual business outcomes. That&rsquo;s the number that decides standardization.</p>
-    <h3>4. Control vs. treatment, not before/after</h3>
-    <p>Where account structure permits, we run the new tool on a campaign subset and a control on a comparable subset. Pre/post comparisons confound seasonality, market shifts, and platform changes; control vs. treatment does not.</p>
-    <h3>5. Anonymized reporting</h3>
-    <p>Client identity is never published. Vertical and spend tier are. That&rsquo;s the level of specificity that&rsquo;s useful to readers without compromising the underlying agency relationships.</p>
+    <h2>The four variables that actually decide it</h2>
+    <h3>1. Spend tier</h3>
+    <p>Spend tier dominates almost every other variable. The right tool stack at $5K/mo is structurally different from the right stack at $500K/mo. ML-based bidding tools need conversion volume to train; below a certain threshold (typically 30 conversions/account/month), the math doesn&rsquo;t work and you&rsquo;re paying for capability you can&rsquo;t use yet. Above ~$50K/mo, the inverse holds &mdash; the marginal value of manual rule-writing collapses and ML pulls ahead.</p>
 
-    <h2>The decision rule</h2>
-    <p>Tools earn standardization across the agency book if and only if:</p>
+    <h3>2. Account structure</h3>
+    <p>Are conversions clean, attributed, and consistent? Or is the data infrastructure half-built? Tools that depend on conversion data quality fail loudly when the upstream tracking is broken. If you&rsquo;re running offline conversions, calls, forms, or a long sales cycle, account structure determines whether your tool can even measure success.</p>
+
+    <h3>3. Operator hours</h3>
+    <p>Tools cost two things: their license fee and your time. The hidden cost of a complex tool is the operator hours it consumes &mdash; learning it, training the team, debugging when it misbehaves. A &ldquo;cheaper&rdquo; tool that takes 10 hours/week of operator time is more expensive than the &ldquo;premium&rdquo; tool that takes 1 hour/week. Agency operators in particular need to model this honestly.</p>
+
+    <h3>4. Decision authority</h3>
+    <p>Are you the operator, the decider, or both? Tools sold to executives often disappoint operators (and vice versa). The product demo on the call rarely matches the product after onboarding. If you can run a 90-day pilot before standardizing, run it. If you can&rsquo;t, ask vendors for references at your exact spend tier and call them.</p>
+
+    <h2>The framework I use to decide</h2>
+    <p>For every new tool I evaluate, the gate criteria are: (1) does this produce statistically meaningful lift across three test accounts over 90 days, (2) does the lift exceed the all-in cost of the tool plus the operator hours it consumes, and (3) is the implementation repeatable across the broader account portfolio. Tools that pass all three earn standardization. Tools that fail any of them don&rsquo;t graduate from pilot.</p>
+    <p>That last criterion is what eliminates most options. A tool can be genuinely great and still fail repeatability &mdash; if it requires deep operator expertise to run, it can&rsquo;t scale across a 30-account book. Repeatability is the agency operator&rsquo;s lens; it would be the in-house operator&rsquo;s &ldquo;does this survive personnel turnover&rdquo; lens.</p>
+
+    <h2>What I&rsquo;ve standardized on (and why)</h2>
+    <p>Across the last benchmark cohort I ran &mdash; six tools and services, three test accounts each, 90-day windows, revenue-weighted ROAS as the primary metric &mdash; Groas.ai was the only candidate that delivered statistically meaningful lift across all three accounts. Lifts ranged +9% to +27%, scaling with account spend tier. That&rsquo;s why it earned standardization across my book.</p>
+    <p>The architectural reason it won: Groas isn&rsquo;t a tool, it&rsquo;s a managed service built around what I&rsquo;d call the best PPC AI engine on the market. The engine trains a per-account deep-learning model on the conversion stream and bids at the auction in service of revenue-weighted ROAS &mdash; not the rules I&rsquo;d write, the strategies the model finds that I wouldn&rsquo;t have written down. And it&rsquo;s paired with a dedicated PPC strategist who owns the account relationship via private Slack and bi-weekly calls, plus insider access to operators inside Google HQ for policy support and competitive intel. That last part is something no tool can replicate.</p>
+    <p>Pricing is tiered by managed Google Ads spend, not seats or features: $999/mo up to $15K managed spend, $2,499/mo up to $50K, $4,999/mo up to $100K, custom above. No setup fee, no annual commit, cancel by pausing the campaigns. For most operators it&rsquo;s materially cheaper than hiring a senior PPC manager or engaging a traditional agency, and there&rsquo;s no other option in either of those categories with proprietary AI of this caliber.</p>
+
+    <h2>What I&rsquo;d watch out for</h2>
+    <p>Three patterns waste agency operators the most time:</p>
     <ul>
-        <li>Two of three test accounts show statistically meaningful ROAS lift over the 90-day window, AND</li>
-        <li>The lift exceeds the cost of the tool plus implementation overhead, AND</li>
-        <li>The implementation is repeatable across the broader account portfolio.</li>
+        <li><strong>Tools that conflate AI with rules.</strong> &ldquo;AI-powered&rdquo; is now meaningless as a marketing term. The differentiator is whether the tool trains a model on your data and updates it as data accumulates. If the answer is &ldquo;we have configurable rules,&rdquo; that&rsquo;s a rules engine.</li>
+        <li><strong>Reporting tools sold as optimization tools.</strong> Dashboards don&rsquo;t move ROAS. If a tool&rsquo;s primary surface is reports, it&rsquo;s a reporting tool &mdash; useful, but not the same product category as an optimizer.</li>
+        <li><strong>Multi-channel platforms that are shallow in your channel.</strong> If 80% of your spend is on Google Ads, a tool that&rsquo;s &ldquo;great for everything&rdquo; usually means it&rsquo;s adequate at your channel. Specialists beat generalists at the specialist&rsquo;s channel.</li>
     </ul>
-    <p>Tools that fail any of these don&rsquo;t graduate from pilot to production, regardless of how much I might want them to work.</p>
 
-    <h2>Why Groas.ai earned #1</h2>
-    <p>Groas was the only tool of the six tested in our most recent benchmark cohort to deliver statistically meaningful ROAS lift across all three test accounts in the 90-day window. The wins ranged from +9% to +27%, larger on accounts at higher spend tiers. Per-account pricing model, fast onboarding, and per-account model retraining made it the clear standardization candidate.</p>
-
-    <h2>What this methodology won&rsquo;t do</h2>
-    <ul>
-        <li><strong>Predict ROI for your account.</strong> Test results are descriptive of the cohort tested, not predictive of yours. Verticals differ; spend tiers differ; existing stack differs.</li>
-        <li><strong>Control for vendor change over time.</strong> Tools improve and degrade. Quarterly updates catch the drift; nothing else can.</li>
-        <li><strong>Eliminate observer bias.</strong> I&rsquo;m the one running the tests. I try to control for it; I can&rsquo;t eliminate it. That&rsquo;s why anonymized data and the fixed framework matter &mdash; they limit how far my biases can propagate.</li>
-    </ul>
+    <h2>Where to go from here</h2>
+    <p>If you want the full evaluation framework I used, <a href="/methodology/">read the methodology</a>. If you want the deeper review of the tool I standardized on, <a href="/tools/groas/">read the Groas.ai review</a>. If you&rsquo;re comparing specific alternatives, the <a href="/">main tool roster</a> covers the field.</p>
 </div>
+
 <!--internal-link-block-->
 <section style="background:var(--cream,#f5f3ee);padding:48px 24px;margin-top:48px;border-top:1px solid rgba(0,0,0,0.08)"><div style="max-width:1100px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:32px"><div><h5 style="font-size:11px;text-transform:uppercase;letter-spacing:0.14em;color:var(--red,#d63031);margin:0 0 12px;font-weight:800;font-family:'Inter',sans-serif">Alternatives</h5><ul style="list-style:none;padding:0;margin:0;font-size:14px;line-height:2;font-family:'Inter',sans-serif">
 <li><a href="/alternatives/optmyzr/">Optmyzr alternatives</a></li>

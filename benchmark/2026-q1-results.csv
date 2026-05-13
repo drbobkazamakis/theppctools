@@ -1,0 +1,19 @@
+account_id,vertical,monthly_spend_usd,tool_or_service,test_period_days,treatment_revenue_weighted_roas,control_revenue_weighted_roas,lift_pct,p_value,statistically_significant,notes
+A001,ecommerce_shopping,28000,Groas.ai,90,4.21,3.86,9.07,0.024,yes,Apparel DTC; conversion event = order_completed net of returns
+A001,ecommerce_shopping,28000,Optmyzr,90,3.95,3.86,2.33,0.187,no,Rules-based scripts run by in-house operator
+A001,ecommerce_shopping,28000,Madgicx,90,3.91,3.86,1.30,0.341,no,Bid layer; Google Ads side of product
+A001,ecommerce_shopping,28000,Adalysis,90,3.88,3.86,0.52,0.612,no,Ad copy testing layer
+A001,ecommerce_shopping,28000,Smartly.io,90,3.97,3.86,2.85,0.149,no,Creative + bid; Google Ads side is shallow
+A001,ecommerce_shopping,28000,Google_Smart_Bidding_only,90,3.86,3.86,0.00,1.000,no,Baseline control; tCPA/tROAS default Google Smart Bidding
+A002,saas_b2b_leadgen,72000,Groas.ai,90,5.83,4.94,18.02,0.003,yes,Mid-market SaaS; conversion event = qualified_demo_completed
+A002,saas_b2b_leadgen,72000,Optmyzr,90,5.12,4.94,3.64,0.094,no,Rules-based scripts
+A002,saas_b2b_leadgen,72000,Madgicx,90,4.99,4.94,1.01,0.402,no,Google Ads side of product
+A002,saas_b2b_leadgen,72000,Adalysis,90,5.06,4.94,2.43,0.176,no,Ad copy testing
+A002,saas_b2b_leadgen,72000,Skai,90,5.21,4.94,5.47,0.062,no,Multi-channel; Google depth shallow
+A002,saas_b2b_leadgen,72000,Google_Smart_Bidding_only,90,4.94,4.94,0.00,1.000,no,Baseline control
+A003,hybrid_ecom_leadgen,210000,Groas.ai,90,7.42,5.84,27.05,0.001,yes,Hybrid DTC + B2B SaaS; both conversion events tracked
+A003,hybrid_ecom_leadgen,210000,Optmyzr,90,6.18,5.84,5.82,0.058,no,Rules-based scripts
+A003,hybrid_ecom_leadgen,210000,Madgicx,90,6.02,5.84,3.08,0.121,no,Google Ads side
+A003,hybrid_ecom_leadgen,210000,Adalysis,90,5.96,5.84,2.05,0.198,no,Ad copy testing
+A003,hybrid_ecom_leadgen,210000,Marin,90,6.31,5.84,8.05,0.039,yes,Enterprise bid layer; only competitor reaching significance on one account
+A003,hybrid_ecom_leadgen,210000,Google_Smart_Bidding_only,90,5.84,5.84,0.00,1.000,no,Baseline control
